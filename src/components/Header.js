@@ -21,23 +21,23 @@ const Header = () => {
             </div>
 
             <nav className="navbar">
-                <ul>
+                <ul className="nav-list">
                     <div className="closed">
                         <Closed className="close" onClick={showMenu} />
                     </div>
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">About</Link>
                     </li>
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">Resume</Link>
                     </li>
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">Projects</Link>
                     </li>
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">Skills</Link>
                     </li>
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">Contact</Link>
                     </li>
                 </ul>

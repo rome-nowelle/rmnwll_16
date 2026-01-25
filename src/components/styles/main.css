@@ -2,9 +2,331 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+.main-container {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Main Section */
+.container {
+    background-color: var(--content-color);
+    display: flex;
 }
 
 .main {
-    padding: 20px;
-    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 35px;
+}
+
+/* Left Section */
+.left-section {
+    text-align: center;
+    padding: 45px 45px 20px 45px;
+    max-width: 450px;
+    color: var(--primary-color);
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin: 120px 40px 40px 30px;
+}
+
+.left-section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s;
+    animation: pulse 0.6s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile-pic {
+    max-width: 325px;
+    height: 400px;
+    margin-bottom: 26px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personal-info {
+    margin: 0 30px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: #3e3e3e;
+}
+
+.personal-info h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.personal-info p {
+    font-size: 15px;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-top: 15px; 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.contact-info i {
+    font-size: 20px;
+}
+
+.info span {
+    font-size: 11.5px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--hover-color);
+    scale: 1.2;
+    transition: transform 0.3s;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    padding: 30px 40px 20px 40px;
+    color: var(--primary-color);
+    margin: 100px 40px 40px 0;
+    background-color: var(--content-color);
+    border-radius: 20px;
+}
+
+.right-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.right-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--hover-color);
+    margin-top: 3px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.right-section .qoute {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-family: 'Biorhyme', sans-serif;
+    font-size: 13px;
+}
+
+.right-section .description {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 30px;
+    text-indent: 30px;
+    font-weight: lighter;
+}
+
+/* What I Do Boxes */
+.right-section h3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.what-i-do-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.what-i-do {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.what-i-do:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    background-color: var(--hover-color);
+    color: var(--background-color);
+}
+
+.what-i-do:hover p {
+    color: var(--background-color);
+}
+
+.info-two {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.info-two p {
+    font-size: 11px;
+    font-weight: 200; 
+    margin-top: 8px;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+    text-indent: 15px;
+    color: #909090;
+}
+
+.info-two span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.right-section h4 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+/* Highlights Section */
+.highlights {
+    margin-bottom: 30px;
+}
+
+.highlight-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 13px;
+}
+
+.highlight-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.icon-highlight {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-left: 10px;
+    gap: 25px;
+}
+
+.icon-highlight p {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.icon-highlight li {
+    font-size: 11px;
+    font-weight: lighter;
+    margin-top: 5px;
+    text-indent: 15px;
+    list-style: inside;
+    color: #909090;
+    list-style-type: circle;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logos img {
+    height: 35px;
+    width: auto;
+}
+
+/* Languages Section */
+.languages-section {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.language {
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 18px 30px;
+}
+
+.language:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.language h1 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
