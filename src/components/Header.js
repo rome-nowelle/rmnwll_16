@@ -5,6 +5,7 @@ import MenuBookOutlined from "@mui/icons-material/MenuBookOutlined";
 import { NavLink } from "react-router-dom";
 import logo from '../assets/logo.png';
 
+
 const Header = () => {
 
     const [active, setActive] = React.useState(false);
@@ -20,33 +21,25 @@ const Header = () => {
                 <h1>Rmnwll_</h1>
             </div>
 
-            <nav className="navbar">
+            <nav className={`navbar ${active ? "active" : ""}`}>
                 <ul className="nav-list">
-                    <div className="closed">
+                    <li className="closed">
                         <Closed className="close" onClick={showMenu} />
-                    </div>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/"
-                            end
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            About
-                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/">Resume</NavLink>
+                        <NavLink to="/" end className="nav-link">About</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/">Projects</NavLink>
+                        <NavLink to="/resume" className="nav-link">Resume</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/">Skills</NavLink>
+                        <NavLink to="/projects" className="nav-link">Projects</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/">Contact</NavLink>
+                        <NavLink to="/skills" className="nav-link">Skills</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/contact" className="nav-link">Contact</NavLink>
                     </li>
                 </ul>
             </nav>
