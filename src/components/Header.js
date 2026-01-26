@@ -2,17 +2,17 @@ import React from "react";
 import "./styles/header.css";
 import Closed from "@mui/icons-material/Close";
 import MenuBookOutlined from "@mui/icons-material/MenuBookOutlined";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../assets/logo.png';
 
 const Header = () => {
 
     const [active, setActive] = React.useState(false);
 
-        function showMenu() {
+    function showMenu() {
         setActive(!active);
     }
-        
+
     return (
         <div className="header">
             <div className="logo">
@@ -26,19 +26,27 @@ const Header = () => {
                         <Closed className="close" onClick={showMenu} />
                     </div>
                     <li className="nav-item">
-                        <Link to="/">About</Link>
+                        <NavLink
+                            to="/"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? "nav-link active" : "nav-link"
+                            }
+                        >
+                            About
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/">Resume</Link>
+                        <NavLink to="/">Resume</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/">Projects</Link>
+                        <NavLink to="/">Projects</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/">Skills</Link>
+                        <NavLink to="/">Skills</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/">Contact</Link>
+                        <NavLink to="/">Contact</NavLink>
                     </li>
                 </ul>
             </nav>
