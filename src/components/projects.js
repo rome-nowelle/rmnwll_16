@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Styles
+import './styles/skills.css';
+
+
 const Project = () => {
     return (
         <div>

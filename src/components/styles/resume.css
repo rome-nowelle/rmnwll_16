@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+right-section {
+    flex: 1;
+    padding: 30px 40px 20px 40px;
+    color: var(--primary-color);
+    margin: 40px 40px 40px 0;
+    background-color: var(--content-color);
+    border-radius: 20px;
+}
+
+.right-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1.8px;
+}
+
+.right-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--hover-color);
+    margin-top: 3px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Educational Attainment */
+.right-section h3 {
+    font-size: 19px;
+    margin: 30px 0 15px 0;
+    letter-spacing: 1.2px;
+    text-indent: 10px;
+}
+
+.education {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.education p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 23px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-title {
+    display: flex;
+    gap: 10px;
+}
+
+.edu-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+}
+
+.edu-header span {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.honors {
+    display: flex;
+    gap: 5px;
+    margin-left: 23px;
+    margin-top: 8px;
+}
+
+.honors h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.details {
+    margin-top: 8px;
+    font-size: 14px;
+    text-indent: 5px;
+    line-height: 1.4;
+}
+
+.details ul {
+    list-style: disc;
+    margin-left: 50px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.details ul li {
+    margin-bottom: 3px;
+    font-weight: 200;
+}
+
+/* Work Experience */
+.experience {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.experience p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 23px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.ex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ex-title {
+    display: flex;
+    gap: 10px;
+}
+
+.ex-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+}
+
+.ex-header span {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.position {
+    margin-left: 23px;
+    margin-top: 8px;
+}
+
+.position h4 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Organization */
+.organization {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.organization p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 23px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.org-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.org-title {
+    display: flex;
+    gap: 10px;
+}
+
+.org-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+}
+
+.org-header span {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.spanie {
+    font-weight: 300;
+}

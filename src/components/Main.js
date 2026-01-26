@@ -1,11 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
+
+// Styles
 import "./styles/main.css";
-import profilePic from '../assets/profile-pic.jpg';
-import Graduate from '@mui/icons-material/School';
-import Codes from '@mui/icons-material/Code';
-import Windows from '@mui/icons-material/ViewQuiltRounded';
-import WebAsset from '@mui/icons-material/WebAsset';
-import Design from '@mui/icons-material/ViewListRounded';
+
+//
+import LeftSection from "./LeftSection";
+
+// Images
 import Pup from '../assets//Polytechnic University of the Philippines.png';
 import html from '../assets/HTML5.png';
 import css from '../assets/CSS.png';
@@ -15,81 +17,30 @@ import react from '../assets/React.png';
 import typescript from '../assets/Typescript.png';
 import figma from '../assets/Figma.png';
 import canva from '../assets/Canva.png';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 
+// Icons
+import Graduate from '@mui/icons-material/School';
+import Codes from '@mui/icons-material/Code';
+import Windows from '@mui/icons-material/ViewQuiltRounded';
+import WebAsset from '@mui/icons-material/WebAsset';
+import Design from '@mui/icons-material/ViewListRounded';
+
+// Main Component
 const Main = () => {
+    useEffect(() => {
+        document.title = "Rmnwll_"
+    }, []);
+
     return (
         <div className="main-container">
             <div className="container">
                 <div className="main">
-                    <div className="left-section">
-                        <img src={profilePic} alt="Rmnwll_" className="profile-pic" />
-
-                        <div className="personal-info">
-                            <h2>Rome Nowelle R. Sanares</h2>
-                            <p>BSIT Graduate</p>
-                        </div>
-
-                        <div className="contact-info">
-                            <ul>
-                                <li>
-                                    {/* <i className="fa-solid fa-envelope"></i> */}
-                                    <div className="info">
-                                        <span>Email</span>
-                                        <p>romenowellesanares@gmail.com</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    {/* <i className="fa-solid fa-mobile"></i> */}
-                                    <div className="info">
-                                        <span>Contact Number</span>
-                                        <p>0995485154</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    {/* <i className="fa-solid fa-location-dot"></i> */}
-                                    <div className="info">
-                                        <span>Location</span>
-                                        <p>Imus City, Cavite, Philippines</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="social-links">
-                            <a
-                                href="https://www.facebook.com/your.username"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FacebookIcon />
-                            </a>
-
-                            <a
-                                href="https://www.facebook.com/your.username"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <LinkedInIcon />
-                            </a>
-
-                            <a
-                                href="https://www.facebook.com/your.username"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <GitHubIcon />
-                            </a>
-                        </div>
-                    </div>
+                    {/* Left Section */}
+                    <LeftSection />
                 </div>
 
-
+                {/* Right Section */}
                 <div className="right-section">
                     <h2>About Me</h2>
                     <p className="qoute">“Creating modern, responsive, and user-friendly web experiences.”</p>
@@ -120,7 +71,9 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <h4>Quick Highlights</h4>
+                    <div className="text-margin">
+                        <h4>Quick Highlights</h4>
+                    </div>
 
                     <div className="highlights">
                         <div className="highlight-item">
@@ -168,8 +121,9 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-
-                    <h4>Languages</h4>
+                    <div className="text-margin">
+                        <h4>Languages</h4>
+                    </div>
 
                     <div className="languages-section">
                         <div className="language">

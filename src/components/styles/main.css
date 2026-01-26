@@ -246,7 +246,6 @@
 
 .right-section h4 {
     font-size: 21px;
-    margin-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
@@ -329,4 +328,8 @@
     font-size: 14px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+
+.text-margin h4 {
+    margin-bottom: 20px;
 }
