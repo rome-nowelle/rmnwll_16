@@ -25,8 +25,7 @@ const Project = () => {
         { id: 3, title: 'Rmnwll_', description: 'Personal Project', category: 'Web Design', image: Eportfolio },
         { id: 4, title: 'JustiFile', description: 'Course Project', category: 'Web Design', image: JustifilePrototype},
     ];
-
-
+    
     const [activeCategory, setActiveCategory] = useState('All');
 
     const filteredProjects = activeCategory === 'All'

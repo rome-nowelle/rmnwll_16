@@ -103,6 +103,22 @@ const Resume = () => {
                         </div>
                     </div>
 
+                    {/* Eligibility */}
+                    <h3>Eligibility</h3>
+                    <div class="eligibility">
+                        <div class="org-header">
+                            <div class="org-title">
+                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
+                            </div>
+                            <span>2025</span>
+                        </div>
+                        <p>Civil Service Commission</p>
+                        <div class="position">
+                            <h4>Certificate of Eligibility</h4>
+                        </div>
+                    </div>
+
                     {/* Organization */}
                     <h3>Organization</h3>
 

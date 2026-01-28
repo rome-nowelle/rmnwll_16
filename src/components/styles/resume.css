@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Educational Attainment */
 .right-section h3 {
     font-size: 19px;
@@ -165,4 +164,18 @@
 
 .spanie {
     font-weight: 300;
+}
+
+/* Eligibility */
+.eligibility {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.eligibility p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 23px;
+    color: #909090;
+    letter-spacing: 1px;
 }

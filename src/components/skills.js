@@ -32,7 +32,7 @@ const Skills = () => {
     useEffect(() => {
         document.title = "Rmnwll_ - Skills"
     }, []);
-    
+
     useEffect(() => {
         const updateRangeStyles = () => {
             document
@@ -55,7 +55,7 @@ const Skills = () => {
 
         updateRangeStyles();
     }, []);
-    
+
     return (
         <div className="main-container">
             <div className="container">
@@ -202,45 +202,34 @@ const Skills = () => {
                     </div>
 
                     {/* Soft Skills */}
-                    <h3>Soft Skills</h3>
-
-                    <div class="o-skills">
-                        <div class="p-skills">
-                            <h3>Problem-Solving</h3>
+                    <div className="other-skills">
+                        <div className="my-skills">
+                            <h4 className="other-text">Soft Skills</h4>
+                            <div className="o-skills">
+                                <div className="p-skills">
+                                    <ul>
+                                        <li>Problem-Solving</li>
+                                        <li>Adaptability</li>
+                                        <li>Continuous Learning</li>
+                                        <li>Detail-oriented</li>
+                                        <li>Teamwork/Collaboration</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cont-skill">
-                            <input type="range" min="0" max="100" value="90" disabled />
-                            <span>90%</span>
-                        </div>
-                    </div>
-
-                    <div class="o-skills">
-                        <div class="p-skills">
-                            <h3>Continuous Learning</h3>
-                        </div>
-                        <div class="cont-skill">
-                            <input type="range" min="0" max="100" value="100" disabled />
-                            <span>100%</span>
-                        </div>
-                    </div>
-
-                    <div class="o-skills">
-                        <div class="p-skills">
-                            <h3>Detail-oriented</h3>
-                        </div>
-                        <div class="cont-skill">
-                            <input type="range" min="0" max="100" value="85" disabled />
-                            <span>85%</span>
-                        </div>
-                    </div>
-
-                    <div class="o-skills">
-                        <div class="p-skills">
-                            <h3>Teamwork/Collaboration</h3>
-                        </div>
-                        <div class="cont-skill">
-                            <input type="range" min="0" max="100" value="100" disabled />
-                            <span>100%</span>
+                        <div className="my-skills">
+                            <h4 className="other-text">Other Skills</h4>
+                            <div className="o-skills">
+                                <div className="p-skills">
+                                    <ul>
+                                        <li>Problem-Solving</li>
+                                        <li>Adaptability</li>
+                                        <li>Continuous Learning</li>
+                                        <li>Detail-oriented</li>
+                                        <li>Teamwork/Collaboration</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
