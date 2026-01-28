@@ -5,8 +5,8 @@ import { useEffect } from "react";
 import "./styles/contact.css";
 
 // Images
-import Logo from "../assets/logo.png";
-import QRCode from "../assets/SANARES_Resume.png";
+import Logo from "../assets/img/logo.png";
+import QRCode from "../assets/img/SANARES_Resume.png";
 
 // Icons
 import SendRoundedIcon from '@mui/icons-material/SendRounded';

@@ -8,21 +8,21 @@ import "./styles/skills.css";
 import LeftSection from "./LeftSection";
 
 // Images
-import html from '../assets/HTML5.png';
-import css from '../assets/CSS.png';
-import javascript from '../assets/JavaScript.png';
-import bootstrap from '../assets/Bootstrap.png';
-import react from '../assets/React.png';
-import typescript from '../assets/Typescript.png';
-import figma from '../assets/Figma.png';
-import canva from '../assets/Canva.png';
-import php from '../assets/PHP.png';
-import mysql from '../assets/MySQL.png';
-import vsc from '../assets/vsc.png'
-import github from '../assets/github.png';
-import git from '../assets/Git.png';
-import xammpp from '../assets/XAMPP.png';
-import microsoft from '../assets/Microsoft.png'
+import html from '../assets/img/HTML5.png';
+import css from '../assets/img/CSS.png';
+import javascript from '../assets/img/JavaScript.png';
+import bootstrap from '../assets/img/Bootstrap.png';
+import react from '../assets/img/React.png';
+import typescript from '../assets/img/Typescript.png';
+import figma from '../assets/img/Figma.png';
+import canva from '../assets/img/Canva.png';
+import php from '../assets/img/PHP.png';
+import mysql from '../assets/img/MySQL.png';
+import vsc from '../assets/img/vsc.png'
+import github from '../assets/img/github.png';
+import git from '../assets/img/Git.png';
+import xammpp from '../assets/img/XAMPP.png';
+import microsoft from '../assets/img/Microsoft.png'
 
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';

@@ -8,15 +8,15 @@ import "./styles/main.css";
 import LeftSection from "./LeftSection";
 
 // Images
-import Pup from '../assets//Polytechnic University of the Philippines.png';
-import html from '../assets/HTML5.png';
-import css from '../assets/CSS.png';
-import javascript from '../assets/JavaScript.png';
-import bootstrap from '../assets/Bootstrap.png';
-import react from '../assets/React.png';
-import typescript from '../assets/Typescript.png';
-import figma from '../assets/Figma.png';
-import canva from '../assets/Canva.png';
+import Pup from '../assets/img/Polytechnic University of the Philippines.png';
+import html from '../assets/img/HTML5.png';
+import css from '../assets/img/CSS.png';
+import javascript from '../assets/img/JavaScript.png';
+import bootstrap from '../assets/img/Bootstrap.png';
+import react from '../assets/img/React.png';
+import typescript from '../assets/img/Typescript.png';
+import figma from '../assets/img/Figma.png';
+import canva from '../assets/img/Canva.png';
 
 
 // Icons

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Assets
-import profilePic from '../assets/profile-pic.jpg'; 
+import profilePic from '../assets/img/profile-pic.jpg'; 
 
 // Icons
 import FacebookIcon from '@mui/icons-material/Facebook';

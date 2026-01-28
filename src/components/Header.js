@@ -1,9 +1,17 @@
 import React from "react";
+
+// Styles
 import "./styles/header.css";
+
+// Icons
 import Closed from "@mui/icons-material/Close";
 import MenuBookOutlined from "@mui/icons-material/MenuBookOutlined";
+
+// Router
 import { NavLink } from "react-router-dom";
-import logo from '../assets/logo.png';
+
+// Images
+import logo from '../assets/img/logo.png';
 
 
 const Header = () => {
