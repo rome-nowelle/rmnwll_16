@@ -4,31 +4,6 @@
     box-sizing: border-box;
 }
 
-right-section {
-    flex: 1;
-    padding: 30px 40px 20px 40px;
-    color: var(--primary-color);
-    margin: 40px 40px 40px 0;
-    background-color: var(--content-color);
-    border-radius: 20px;
-}
-
-.right-section h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    letter-spacing: 1.8px;
-}
-
-.right-section h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 5px;
-    background-color: var(--hover-color);
-    margin-top: 3px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
 
 /* Educational Attainment */
 .right-section h3 {

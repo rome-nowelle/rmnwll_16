@@ -1,14 +1,37 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 // Styles
-import './styles/skills.css';
+import './styles/projects.css';
 
+// Components
+import LeftSection from './LeftSection';
 
 const Project = () => {
+    useEffect(() => {
+        document.title = "Rmnwll_ - Projects"
+    }, []);
+
     return (
-        <div>
-            <h1>Projects Page</h1>
-            <p>This is where the projects will be listed.</p>
+        <div className="main-container">
+            <div className="container">
+                <div className="main">
+                    {/* Left Section */}
+                    <LeftSection />
+                </div>
+
+                {/* Right Section */}
+                <div className="right-section">
+                    <h2>Project</h2>
+
+                    <div className="projects">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     );
 }

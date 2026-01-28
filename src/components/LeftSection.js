@@ -22,6 +22,8 @@ const LeftSection = () => {
                 <p>BSIT Graduate</p>
             </div>
 
+            <hr />
+
             <div className="contact-info">
                 <ul>
                     <li>

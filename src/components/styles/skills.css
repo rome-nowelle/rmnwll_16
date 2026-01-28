@@ -3,3 +3,336 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.certification {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.certification p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 23px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-title {
+    display: flex;
+    gap: 10px;
+}
+
+.cert-title i {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.cert-title h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+}
+
+.cert-header span {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.position {
+    margin-left: 23px;
+    margin-top: 8px;
+}
+
+.position h4 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Technical Skills*/
+.tech-skills {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: var(--content-color);
+}
+
+.tech-skills h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: #2b2b2b;
+    text-indent: 5px;
+}
+
+/* Frontend Skills */
+.frontend {
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3.5px solid #000;
+}
+
+.frontend h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: #2b2b2b;
+    text-indent: 5px;
+    color: var(--hover-color);
+}
+
+.f-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; 
+    width: 80px; 
+}
+
+.skill img {
+    height: 35px; 
+    width: 35px;
+    object-fit: contain;
+    
+}
+
+.skill input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: linear-gradient(
+        to right,
+        var(--hover-color) 0%,
+        var(--hover-color) 35%,
+        #ccc 35%,
+        #ccc 100%
+    );
+    outline: none;
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
+    transition: background 0.3s ease-in-out;
+    margin: 0;
+}
+
+.skill input[type="range"]:disabled {
+    background: #eee;
+    opacity: 0.8;
+}
+
+/* WebKit (Chrome, Safari) */
+.skill input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+/* Firefox */
+.skill input[type="range"]::-moz-range-thumb {
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* IE / Edge (old versions) */
+.skill input[type="range"]::-ms-thumb {
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.skill span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--hover-color);
+    margin-bottom: 0;
+}
+
+/* Backend & UI/UX Skills */
+.backend-uiux {
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-around;
+    /* gap: 10px; */
+}
+
+.backend, .uiux {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 3.5px solid #000;
+}
+
+.backend, .uiux h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: #2b2b2b;
+    text-indent: 5px;
+    color: var(--hover-color);
+}
+
+.b-skills, .u-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+    padding: 5px 60px;
+}
+
+/* Tools */
+.tools {
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3.5px solid #000;
+}
+
+.tools h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: #2b2b2b;
+    text-indent: 5px;
+    color: var(--hover-color);
+}
+
+.f-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.t-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+}
+
+/* Other Skills */
+.o-skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.p-skills h3 {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    margin: 3px 30px;
+}
+
+.cont-skill {
+    width: 60%; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont-skill input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: linear-gradient(
+        to right,
+        var(--hover-color) 0%,
+        var(--hover-color) 35%,
+        #ccc 35%,
+        #ccc 100%
+    );
+    outline: none;
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
+    transition: background 0.3s ease-in-out;
+    margin: 0;
+}
+
+.cont-skill input[type="range"]:disabled {
+    background: #eee;
+    opacity: 0.8;
+}
+
+/* WebKit (Chrome, Safari) */
+.cont-skill input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+/* Firefox */
+.cont-skill input[type="range"]::-moz-range-thumb {
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* IE / Edge (old versions) */
+.cont-skill input[type="range"]::-ms-thumb {
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.cont-skill span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--hover-color);
+    margin: 0 auto;         
+    display: block;         
+    text-align: center;      
+}

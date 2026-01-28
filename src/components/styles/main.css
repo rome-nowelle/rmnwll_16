@@ -5,6 +5,16 @@
 
 }
 
+hr {
+    border: 0;
+    height: 2px;
+    width: 85%;
+    background: var(--primary-color);
+    margin: 20px auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
 .main-container {
     background-size: cover;
     background-attachment: fixed;
