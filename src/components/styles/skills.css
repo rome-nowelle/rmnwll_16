@@ -250,21 +250,20 @@
 .other-skills {
     margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 
 }
 
 .my-skills {
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15); */
     border: solid 3.5px #000;
     background: var(--content-color);
 }
 
 .o-skills {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     flex-wrap: nowrap;
     align-items: center;

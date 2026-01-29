@@ -222,11 +222,10 @@ const Skills = () => {
                             <div className="o-skills">
                                 <div className="p-skills">
                                     <ul>
-                                        <li>Problem-Solving</li>
-                                        <li>Adaptability</li>
-                                        <li>Continuous Learning</li>
-                                        <li>Detail-oriented</li>
-                                        <li>Teamwork/Collaboration</li>
+                                        <li>UI/UX Prototyping</li>
+                                        <li>Responsive Design</li>
+                                        <li>Cybersecurity Fundamentals</li>
+
                                     </ul>
                                 </div>
                             </div>

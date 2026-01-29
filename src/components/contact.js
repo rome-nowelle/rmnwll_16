@@ -1,5 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
+import { useRef } from "react";
+
+// Email JS
+import emailjs from "@emailjs/browser";
 
 //Styles;
 import "./styles/contact.css";
@@ -18,6 +22,31 @@ const Contact = () => {
     useEffect(() => {
         document.title = "Rmnwll_ - Contact"
     }, []);
+
+    const formRef = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_vw68ndb",     
+                "template_qlyqtrl",    
+                formRef.current,
+                "3MX5hjWzo8plY66ho"   
+            )
+            .then(
+                (result) => {
+                    alert("Message sent successfully!");
+                    console.log(result.text);
+                    e.target.reset();
+                },
+                (error) => {
+                    alert("Failed to send message. Please try again.");
+                    console.log(error.text);
+                }
+            );
+    };
 
     return (
         <div className="main-container">
@@ -45,7 +74,7 @@ const Contact = () => {
 
                     <div className="contact-container">
                         <div className="contact-form">
-                            <form id="contactForm" action="" method="post">
+                            <form ref={formRef} onSubmit={sendEmail}>
                                 <div className="input-group">
                                     <div className="input-field">
                                         <label for="name">Full Name</label>
