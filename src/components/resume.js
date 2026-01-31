@@ -1,5 +1,5 @@
 import React from 'react';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 // Styles
 import './styles/resume.css';
@@ -16,123 +16,123 @@ const Resume = () => {
     useEffect(() => {
         document.title = "Rmnwll_ - Resume"
     }, []);
-    
+
     return (
         <div className="main-container">
             <div className="container">
                 <div className="main">
                     {/* Left Section */}
                     <LeftSection />
-                </div>
 
-                {/* Right Section */}
-                <div class="right-section">
-                    <h2>Resume</h2>
+                    {/* Right Section */}
+                    <div class="right-section">
+                        <h2>Resume</h2>
 
-                    {/* Educational Attainment */}
-                    <h3>Educational Attainment</h3>
+                        {/* Educational Attainment */}
+                        <h3>Educational Attainment</h3>
 
-                    <div class="education">
-                        <div class="edu-header">
-                            <div class="edu-title">
-                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
-                                <h4>Polytechnic University of the Philippines - <span className="spannie">Main
-                                    Campus</span></h4>
+                        <div class="education">
+                            <div class="edu-header">
+                                <div class="edu-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>Polytechnic University of the Philippines - <span className="spannie">Main
+                                        Campus</span></h4>
+                                </div>
+                                <span>2021 - 2025</span>
                             </div>
-                            <span>2021 - 2025</span>
-                        </div>
-                        <p>Bachelor of Science in Information Technology (BSIT)</p>
-                        <div class="honors">
-                            <SchoolRoundedIcon />
-                            <h4>Magna Cum Laude</h4>
-                        </div>
-                        <div class="details">
-                            <ul>
-                                <li>President’s Lister (2021–2025) – Maintained consistent academic excellence.</li>
-                                <li>Capstone Project: Online Barangay Incident Reporting & Management Tool.</li>
-                                <li>Internship Project: Appointment Scheduling System for veterinary and grooming services.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="education">
-                        <div class="edu-header">
-                            <div class="edu-title">
-                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
-                                <h4>Benedictine Institute of Learning - <span className="spannie">Imus Cavite</span>
-                                </h4>
+                            <p>Bachelor of Science in Information Technology (BSIT)</p>
+                            <div class="honors">
+                                <SchoolRoundedIcon />
+                                <h4>Magna Cum Laude</h4>
                             </div>
-                            <span>2019 - 2021</span>
-                        </div>
-                        <p>Science, Technology, Engineering and Mathematics (STEM)</p>
-                        <div class="honors">
-                            <SeniorHigh />
-                            <h4>High Honors</h4>
-                        </div>
-                        <div class="details">
-                            <ul>
-                                <li>Basic experience in web development via Google Sites, improved Microsoft Office, and
-                                    early IT exploration.</li>
-                                <li>Developed an organized and detail-oriented approach in school tasks and group work.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Experience */}
-                    <h3>Experience</h3>
-
-                    <div class="experience">
-                        <div class="ex-header">
-                            <div class="ex-title">
-                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
-                                <h4>SMESoft Inc.</h4>
+                            <div class="details">
+                                <ul>
+                                    <li>President’s Lister (2021–2025) – Maintained consistent academic excellence.</li>
+                                    <li>Capstone Project: Online Barangay Incident Reporting & Management Tool.</li>
+                                    <li>Internship Project: Appointment Scheduling System for veterinary and grooming services.
+                                    </li>
+                                </ul>
                             </div>
-                            <span>March 2025 to June 2025</span>
                         </div>
-                        <p>Ayala Ave. Makati City, Cavite, Philippines</p>
-                        <div class="position">
-                            <h4>Front-end Web Developer Intern</h4>
-                        </div>
-                        <div class="details">
-                            <ul>
-                                <li>Designed and developed an appointment scheduling system that improved booking
-                                    efficiency, enhanced navigation, aligned UI/UX with an existing platform, and supported
-                                    coding, testing, and troubleshooting to ensure responsive design across devices.</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    {/* Eligibility */}
-                    <h3>Eligibility</h3>
-                    <div class="eligibility">
-                        <div class="org-header">
-                            <div class="org-title">
-                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
-                                <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
+                        <div class="education">
+                            <div class="edu-header">
+                                <div class="edu-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>Benedictine Institute of Learning - <span className="spannie">Imus Cavite</span>
+                                    </h4>
+                                </div>
+                                <span>2019 - 2021</span>
                             </div>
-                            <span>2025</span>
-                        </div>
-                        <p>Civil Service Commission</p>
-                        <div class="position">
-                            <h4>Certificate of Eligibility</h4>
-                        </div>
-                    </div>
-
-                    {/* Organization */}
-                    <h3>Organization</h3>
-
-                    <div class="organization">
-                        <div class="org-header">
-                            <div class="org-title">
-                                <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
-                                <h4>Google Developer Groups (GDG) </h4>
+                            <p>Science, Technology, Engineering and Mathematics (STEM)</p>
+                            <div class="honors">
+                                <SeniorHigh />
+                                <h4>High Honors</h4>
                             </div>
-                            <span>2024-2025</span>
+                            <div class="details">
+                                <ul>
+                                    <li>Basic experience in web development via Google Sites, improved Microsoft Office, and
+                                        early IT exploration.</li>
+                                    <li>Developed an organized and detail-oriented approach in school tasks and group work.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>Polytechnic University of the Philippines</p>
-                        <div class="position">
-                            <h4>UI/UX Cadet</h4>
+
+                        {/* Experience */}
+                        <h3>Experience</h3>
+
+                        <div class="experience">
+                            <div class="ex-header">
+                                <div class="ex-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>SMESoft Inc.</h4>
+                                </div>
+                                <span>March 2025 to June 2025</span>
+                            </div>
+                            <p>Ayala Ave. Makati City, Cavite, Philippines</p>
+                            <div class="position">
+                                <h4>Front-end Web Developer Intern</h4>
+                            </div>
+                            <div class="details">
+                                <ul>
+                                    <li>Designed and developed an appointment scheduling system that improved booking
+                                        efficiency, enhanced navigation, aligned UI/UX with an existing platform, and supported
+                                        coding, testing, and troubleshooting to ensure responsive design across devices.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Eligibility */}
+                        <h3>Eligibility</h3>
+                        <div class="eligibility">
+                            <div class="org-header">
+                                <div class="org-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
+                                </div>
+                                <span>2025</span>
+                            </div>
+                            <p>Civil Service Commission</p>
+                            <div class="position">
+                                <h4>Certificate of Eligibility</h4>
+                            </div>
+                        </div>
+
+                        {/* Organization */}
+                        <h3>Organization</h3>
+
+                        <div class="organization">
+                            <div class="org-header">
+                                <div class="org-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>Google Developer Groups (GDG) </h4>
+                                </div>
+                                <span>2024-2025</span>
+                            </div>
+                            <p>Polytechnic University of the Philippines</p>
+                            <div class="position">
+                                <h4>UI/UX Cadet</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

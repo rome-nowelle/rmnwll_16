@@ -7,21 +7,23 @@
 
 :root {
     --background-color: #1f1f1f;
-    --content-color: #2b2b2b;
+    --content-color: #222222;
     --primary-color: #fff;
     --hover-color: #cbc100;
 }
 
 .header {
-    background-color: var(--background-color);
+    background-color: #2b2b2b;
     padding: 20px;
     color: var(--primary-color);
     width: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    z-index: 1;
+    justify-content: space-between;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
