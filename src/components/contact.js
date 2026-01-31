@@ -9,7 +9,6 @@ import emailjs from "@emailjs/browser";
 import "./styles/contact.css";
 
 // Images
-import Logo from "../assets/img/logo.png";
 import QRCode from "../assets/img/SANARES_Resume.png";
 
 // Icons
@@ -108,11 +107,6 @@ const Contact = () => {
                                 </div>
                                 <h4>my Resume</h4>
                             </div>
-
-                            <div className="logo-contact">
-                                <img src={Logo} alt="Rmnwll_" />
-                            </div>
-
                         </div>
                     </div>
                 </div>

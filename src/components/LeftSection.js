@@ -4,9 +4,6 @@ import React from 'react';
 import profilePic from '../assets/img/profile-pic.jpg'; 
 
 // Icons
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import PhoneAndroidRoundedIcon from '@mui/icons-material/PhoneAndroidRounded';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
@@ -52,17 +49,7 @@ const LeftSection = () => {
                 </ul>
             </div>
 
-            <div className="social-links">
-                <a href="https://www.facebook.com/your.username" target="_blank" rel="noopener noreferrer">
-                    <FacebookIcon />
-                </a>
-                <a href="https://www.linkedin.com/in/your.username" target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon />
-                </a>
-                <a href="https://github.com/your.username" target="_blank" rel="noopener noreferrer">
-                    <GitHubIcon />
-                </a>
-            </div>
+            
         </div>
     );
 };
