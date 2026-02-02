@@ -35,7 +35,7 @@ const LeftSection = () => {
                         <PhoneAndroidRoundedIcon sx={{ fontSize: 25 }} />
                         <div className="info">
                             <span>Contact Number</span>
-                            <p>0995485154</p>
+                            <p>09954851594</p>
                         </div>
                     </li>
 

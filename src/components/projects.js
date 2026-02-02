@@ -1,6 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // Styles
 import './styles/projects.css';

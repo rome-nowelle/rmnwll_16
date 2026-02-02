@@ -31,7 +31,7 @@
 }
 
 .cardstyle:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 12px rgb(171, 166, 4);
     transition: box-shadow 0.3s;
     animation: pulse 0.6s;
 }
@@ -61,7 +61,12 @@
 }
 
 .overlay p {
-    font-size: 10px;
-    font-weight: lighter;
+    font-size: 9px;
+    font-weight: 600;
     text-transform: uppercase;
+    background-color: var(--hover-color);
+    padding: 5px;
+    color: #000;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
 }

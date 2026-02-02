@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Styles
 import './styles/footer.css';
 
@@ -15,13 +13,13 @@ const Footer = () => {
     return (
         <footer className="footer-cont">
             <div className="social-links">
-                <a href="https://www.facebook.com/your.username" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/rome.nowelle" target="_blank" rel="noopener noreferrer">
                     <FacebookIcon />
                 </a>
-                <a href="https://www.linkedin.com/in/your.username" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/rome-nowelle-sanares/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon />
                 </a>
-                <a href="https://github.com/your.username" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/rome-nowelle" target="_blank" rel="noopener noreferrer">
                     <GitHubIcon />
                 </a>
             </div>

@@ -187,9 +187,9 @@
 }
 
 .backend, .uiux {
-    padding: 5px 10px;
-    border-radius: 30px;
-    border: 3.5px solid #000;
+    padding: 10px;
+    border-radius: 25px;
+    border: 4px solid #ffffff;
     margin-bottom: 15px;
 }
 
@@ -214,10 +214,9 @@
 
 /* Tools */
 .tools {
-    /* margin: 10px 30px; */
-    padding: 15px;
-    border-radius: 30px;
-    border: 3.5px solid #000;
+    padding: 10px 10px 20px 10px;
+    border-radius: 25px;
+    border: 4px solid #ffffff;
 }
 
 .tools h4 {
@@ -256,11 +255,15 @@
 .my-skills {
     padding: 20px;
     border-radius: 12px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15); */
-    border: solid 3.5px #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
     background: var(--content-color);
+    width: 100%;
 }
 
+.my-skills:hover {
+    box-shadow: 0 4px 8px rgb(255, 255, 255), 0 6px 12px rgb(255, 255, 255);
+    transition: 1.2s;
+}
 .o-skills {
     display: flex;
     gap: 20px;
@@ -269,10 +272,11 @@
 }
 
 .p-skills li {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     text-align: left;
     margin: 3px 30px;
+    list-style: square;
 }
 
 .cont-skill {
@@ -330,7 +334,6 @@
     border: none !important;
 }
 
-/* IE / Edge (old versions) */
 .cont-skill input[type="range"]::-ms-thumb {
     width: 0 !important;
     height: 0 !important;
@@ -349,8 +352,14 @@
 }
 
 .other-text {
-    font-size: 19px;
-    margin: 5px 0 15px 0;
-    letter-spacing: 1.2px;
-    text-indent: 10px;
+    font-size: 14.5px;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    padding: 7px;
+    background-color: var(--hover-color);
+    display: inline-flex;
+    color: #000;
+    border-radius: 10px;
+    
 }

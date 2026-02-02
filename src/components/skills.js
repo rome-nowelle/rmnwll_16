@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 
 // Styles
@@ -203,11 +202,11 @@ const Skills = () => {
                         {/* Soft Skills */}
                         <div className="other-skills">
                             <div className="my-skills">
-                                <h4 className="other-text">Soft Skills</h4>
+                                <h5 className="other-text">Soft Skills</h5>
                                 <div className="o-skills">
                                     <div className="p-skills">
                                         <ul>
-                                            <li>Problem-Solving</li>
+                                            <li>Problem-solving</li>
                                             <li>Adaptability</li>
                                             <li>Continuous Learning</li>
                                             <li>Detail-oriented</li>
@@ -216,13 +215,14 @@ const Skills = () => {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="my-skills">
-                                <h4 className="other-text">Other Skills</h4>
+                                <h5 className="other-text">Other Skills</h5>
                                 <div className="o-skills">
                                     <div className="p-skills">
                                         <ul>
                                             <li>UI/UX Prototyping</li>
-                                            <li>Responsive Design</li>
+                                            <li>Responsive Web Design</li>
                                             <li>Cybersecurity Fundamentals</li>
 
                                         </ul>
