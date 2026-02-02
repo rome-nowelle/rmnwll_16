@@ -106,8 +106,8 @@ const Skills = () => {
 
                                     <div className="skill">
                                         <img src={javascript} alt="JavaScript Logo" />
-                                        <input type="range" min="0" max="100" value="35" disabled />
-                                        <span>35%</span>
+                                        <input type="range" min="0" max="100" value="45" disabled />
+                                        <span>45%</span>
                                     </div>
 
                                     <div className="skill">
@@ -118,14 +118,14 @@ const Skills = () => {
 
                                     <div className="skill">
                                         <img src={react} alt="React.js Logo" />
-                                        <input type="range" min="0" max="100" value="15" disabled />
-                                        <span>15%</span>
+                                        <input type="range" min="0" max="100" value="45" disabled />
+                                        <span>45%</span>
                                     </div>
 
                                     <div className="skill">
                                         <img src={typescript} alt="React.js Logo" />
-                                        <input type="range" min="0" max="100" value="20" disabled />
-                                        <span>20%</span>
+                                        <input type="range" min="0" max="100" value="5" disabled />
+                                        <span>5%</span>
                                     </div>
                                 </div>
                             </div>
@@ -165,8 +165,8 @@ const Skills = () => {
 
                                         <div className="skill">
                                             <img src={canva} alt="Canva Logo" />
-                                            <input type="range" min="0" max="100" value="80" disabled />
-                                            <span>80%</span>
+                                            <input type="range" min="0" max="100" value="90" disabled />
+                                            <span>90%</span>
                                         </div>
                                     </div>
                                 </div>
