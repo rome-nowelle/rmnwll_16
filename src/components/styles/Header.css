@@ -76,6 +76,7 @@
     display: none;
 }
 
+/* Tablet & Mobile */
 @media (max-width: 768px) {
     .menu {
         display: block;

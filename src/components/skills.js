@@ -129,7 +129,7 @@ const Skills = () => {
                                 </div>
                             </div>
 
-                            {/* <!-- Backend & UI/UX Skills --> */}
+                            {/* Backend & UI/UX Skills */}
                             <div className="backend-uiux">
 
                                 {/* Backend Skills */}

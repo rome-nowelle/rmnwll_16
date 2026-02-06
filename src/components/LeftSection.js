@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Assets
 import profilePic from '../assets/img/profile-pic.jpg'; 
 
