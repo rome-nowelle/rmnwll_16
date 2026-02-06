@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alexandria';
+    font-family: 'Alexandria', sans-serif;
 }
 
 :root {
@@ -23,7 +23,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .logo {
@@ -41,46 +41,33 @@
 }
 
 .navbar {
-    position: absolute;
-    right: 0;
+    margin-right: 4rem;
 }
 
-.navbar .nav-list {
+.nav-list {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
-.navbar .nav-item a {
+.nav-item a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.navbar .nav-item a:hover {
+.nav-item a:hover,
+.nav-link.active {
     color: var(--hover-color);
 }
 
-.navbar {
-    margin-right: 4rem;
-}
-
-.nav-link {
-    color: var(--primary-color);
-}
-
-.nav-link.active {
-    color: var(--hover-color) !important;
-}
-
 .menu {
-    display: flex;
-    margin-right: 1.5rem;
+    display: none;
+}
 
-    .menu-icon {
-        font-size: 28px;
-        cursor: pointer;
-        display: none;
-    }
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
 }
 
 .closed .close {
@@ -90,26 +77,35 @@
 }
 
 @media (max-width: 768px) {
-    .navbar ul {
+    .menu {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
         position: fixed;
         top: 0;
         left: -100%;
         height: 100vh;
         width: 60%;
         background-color: var(--content-color);
-        flex-direction: column;
-        align-items: center;
+        display: flex;
         justify-content: center;
-        gap: 3rem;
+        align-items: center;
         transition: left 0.3s ease;
+        z-index: 9998;
     }
 
-    .navbar ul.active {
+    .navbar.active {
         left: 0;
     }
 
-    .menu .menu-icon {
-        display: block;
+    .nav-list {
+        flex-direction: column;
+        gap: 3rem;
     }
 
     .closed .close {
@@ -121,7 +117,11 @@
 }
 
 @media (max-width: 480px) {
-    .navbar ul {
+    .menu {
+        display: block;
+    }
+
+    .navbar {
         width: 100%;
     }
 }

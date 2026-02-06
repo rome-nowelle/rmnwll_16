@@ -5,7 +5,7 @@ import "./styles/header.css";
 
 // Icons
 import Closed from "@mui/icons-material/Close";
-import MenuBookOutlined from "@mui/icons-material/MenuBookOutlined";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 // Router
 import { NavLink } from "react-router-dom";
@@ -15,12 +15,15 @@ import logo from '../assets/img/logo.png';
 
 
 const Header = () => {
-
     const [active, setActive] = React.useState(false);
 
-    function showMenu() {
-        setActive(!active);
-    }
+    const openMenu = () => {
+        setActive(true);
+    };
+
+    const closeMenu = () => {
+        setActive(false);
+    };
 
     return (
         <div className="header">
@@ -32,28 +35,39 @@ const Header = () => {
             <nav className={`navbar ${active ? "active" : ""}`}>
                 <ul className="nav-list">
                     <li className="closed">
-                        <Closed className="close" onClick={showMenu} />
+                        <Closed className="close" onClick={closeMenu} />
+                    </li>
+
+                    <li className="nav-item">
+                        <NavLink to="/" end className="nav-link" onClick={closeMenu}>
+                            About
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/" end className="nav-link">About</NavLink>
+                        <NavLink to="/resume" className="nav-link" onClick={closeMenu}>
+                            Resume
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/resume" className="nav-link">Resume</NavLink>
+                        <NavLink to="/projects" className="nav-link" onClick={closeMenu}>
+                            Projects
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/projects" className="nav-link">Projects</NavLink>
+                        <NavLink to="/skills" className="nav-link" onClick={closeMenu}>
+                            Skills
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/skills" className="nav-link">Skills</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                        <NavLink to="/contact" className="nav-link" onClick={closeMenu}>
+                            Contact
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
 
             <div className="menu">
-                <MenuBookOutlined className="menu-icon" onClick={showMenu} />
+                <MenuRoundedIcon className="menu-icon" onClick={openMenu}  />
             </div>
         </div>
     );

@@ -27,9 +27,17 @@
     filter: brightness(1.2) drop-shadow(0 0 10px var(--primary-color));
     transition: filter 0.3s;
 }
+
 .footer p{
     color: #fff;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+@media (max-width: 480px) {
+
+    .footer-cont{
+        flex-direction: column;
+    }
 }
