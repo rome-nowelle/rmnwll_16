@@ -78,6 +78,24 @@
 
 /* Tablet & Mobile */
 @media (max-width: 768px) {
+    .header {
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 9px;
+        font-weight: bold;
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
     .menu {
         display: block;
     }
@@ -91,7 +109,7 @@
         top: 0;
         left: -100%;
         height: 100vh;
-        width: 60%;
+        width: 40%;
         background-color: var(--content-color);
         display: flex;
         justify-content: center;
@@ -102,6 +120,7 @@
 
     .navbar.active {
         left: 0;
+        
     }
 
     .nav-list {
@@ -115,6 +134,20 @@
         top: 20px;
         right: 20px;
     }
+
+    .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.25); /* optional tint */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    z-index: 9997;
+}
 }
 
 @media (max-width: 480px) {
@@ -123,6 +156,7 @@
     }
 
     .navbar {
-        width: 100%;
+        width: 50%;
     }
+
 }

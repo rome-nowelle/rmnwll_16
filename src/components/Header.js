@@ -69,6 +69,8 @@ const Header = () => {
             <div className="menu">
                 <MenuRoundedIcon className="menu-icon" onClick={openMenu}  />
             </div>
+
+            {active && <div className="nav-overlay" onClick={closeMenu}></div>}
         </div>
     );
 };

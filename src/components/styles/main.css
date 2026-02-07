@@ -15,7 +15,7 @@ hr {
 }
 
 .main-container {
-    padding-top: 90px; 
+    margin-top: 90px;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -337,13 +337,13 @@ hr {
         align-items: center;
     }
 
+    .main-container {
+        margin: 0;
+    }
+
     .left-section {
         margin: 20px;
         max-width: 100%;
-    }
-
-    .main-container {
-        padding-top: 70px;
     }
 
     .what-i-do-section {
@@ -387,11 +387,23 @@ hr {
 
     .right-section h2 {
         font-size: 24px;
+        text-align: center;
+    }
+
+    .right-section h2::after {
+    content: '';
+    display: flex;
+    width: 50px;
+    height: 5px;
+    background-color: var(--hover-color);
+    margin: 3px auto 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
     }
 
     .right-section .description {
         font-size: 13px;
-        text-indent: 0;
+        text-indent: 30px;
     }
 
     .qoute {
@@ -420,6 +432,7 @@ hr {
     }
 
     .info-two p {
+        font-size: 10.5px;
         text-indent: 0;
     }
 
@@ -437,8 +450,13 @@ hr {
         margin-left: 0;
     }
 
+    .icon-highlight li {
+        list-style-type: none;
+    }
+
     .languages-section {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
         gap: 15px;
     }
 
@@ -448,5 +466,9 @@ hr {
 
     .social-links {
         margin: 0;
+    }
+
+    .logos {
+        margin-bottom: 10px;
     }
 }
