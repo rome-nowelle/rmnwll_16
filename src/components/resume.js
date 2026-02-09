@@ -10,6 +10,7 @@ import LeftSection from './LeftSection';
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import SeniorHigh from '@mui/icons-material/WorkspacePremiumRounded';
+import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
 
 const Resume = () => {
     useEffect(() => {
@@ -33,7 +34,7 @@ const Resume = () => {
                         <div class="education">
                             <div class="edu-header">
                                 <div class="edu-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>Polytechnic University of the Philippines - <span className="spannie">Main
                                         Campus</span></h4>
                                 </div>
@@ -57,7 +58,7 @@ const Resume = () => {
                         <div class="education">
                             <div class="edu-header">
                                 <div class="edu-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>Benedictine Institute of Learning - <span className="spannie">Imus Cavite</span>
                                     </h4>
                                 </div>
@@ -83,13 +84,14 @@ const Resume = () => {
                         <div class="experience">
                             <div class="ex-header">
                                 <div class="ex-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>SMESoft Inc.</h4>
                                 </div>
                                 <span>March 2025 to June 2025</span>
                             </div>
                             <p>Ayala Ave. Makati City, Cavite, Philippines</p>
                             <div class="position">
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
                                 <h4>Front-end Web Developer Intern</h4>
                             </div>
                             <div class="details">
@@ -106,13 +108,14 @@ const Resume = () => {
                         <div class="eligibility">
                             <div class="org-header">
                                 <div class="org-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
                                 </div>
                                 <span>2025</span>
                             </div>
                             <p>Civil Service Commission</p>
                             <div class="position">
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
                                 <h4>Certificate of Eligibility</h4>
                             </div>
                         </div>
@@ -123,13 +126,14 @@ const Resume = () => {
                         <div class="organization">
                             <div class="org-header">
                                 <div class="org-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>Google Developer Groups (GDG) </h4>
                                 </div>
                                 <span>2024-2025</span>
                             </div>
                             <p>Polytechnic University of the Philippines</p>
                             <div class="position">
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
                                 <h4>UI/UX Cadet</h4>
                             </div>
                         </div>
