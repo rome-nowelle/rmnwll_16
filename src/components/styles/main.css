@@ -120,6 +120,11 @@ hr {
     letter-spacing: 1.5px;
 }
 
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
 .social-links {
     margin-top: 20px;
     display: flex;
@@ -332,6 +337,7 @@ hr {
 
 /* Mobile & Tablet */
 @media (max-width: 768px) {
+
     .main {
         flex-direction: column;
         align-items: center;
@@ -351,10 +357,10 @@ hr {
     }
 }
 
+/* Mobile (Small Screens) */
 @media (max-width: 480px) {
 
     .main {
-        flex-direction: column;
         gap: 15px;
     }
 
@@ -363,7 +369,6 @@ hr {
     }
 
     .left-section {
-        max-width: 100%;
         padding: 25px 20px;
         border-right: none;
         border-bottom: 5px solid #fece35;
@@ -391,14 +396,13 @@ hr {
     }
 
     .right-section h2::after {
-    content: '';
-    display: flex;
-    width: 50px;
-    height: 5px;
-    background-color: var(--hover-color);
-    margin: 3px auto 20px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+        content: '';
+        display: block;
+        width: 50px;
+        height: 5px;
+        background-color: var(--hover-color);
+        margin: 3px auto 20px;
+        border-radius: 4px;
     }
 
     .right-section .description {
@@ -410,6 +414,7 @@ hr {
         text-align: center;
     }
 
+    /* What I Do */
     .what-i-do-section {
         flex-direction: column;
         gap: 15px;
@@ -421,11 +426,12 @@ hr {
     }
 
     .what-i-do:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 6px 12px rgba(0,0,0,.6);
         background-color: var(--hover-color);
         color: var(--background-color);
     }
 
+    /* Info */
     .info-two {
         margin-left: 0;
         text-align: center;
@@ -436,24 +442,25 @@ hr {
         text-indent: 0;
     }
 
-    .highlight-item {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
+    /* Highlights */
+    .highlight-item,
     .icon-highlight {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 10px;
+        gap: 15px;
         margin-left: 0;
     }
 
-    .icon-highlight li {
-        list-style-type: none;
+    .icon-highlight {
+        gap: 10px;
     }
 
+    .icon-highlight li {
+        list-style: none;
+    }
+
+    /* Languages */
     .languages-section {
         display: flex;
         justify-content: center;
@@ -464,6 +471,7 @@ hr {
         text-align: center;
     }
 
+    /* Footer / Socials */
     .social-links {
         margin: 0;
     }

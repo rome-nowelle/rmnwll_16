@@ -25,6 +25,7 @@ import microsoft from '../assets/img/Microsoft.png'
 
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
+import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
 
 
 const Skills = () => {
@@ -72,13 +73,14 @@ const Skills = () => {
                         <div className="certification">
                             <div className="cert-header">
                                 <div className="cert-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 11, marginRight: '5px', marginTop: '6px' }} />
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>Certified in Cybersecurity (CC) ISC2</h4>
                                 </div>
                                 <span>2024</span>
                             </div>
                             <p>ISCP2 Cyber Security</p>
                             <div className="position">
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
                                 <h4>Validation of Completion</h4>
                             </div>
                         </div>
@@ -143,7 +145,7 @@ const Skills = () => {
                                             <span>15%</span>
                                         </div>
 
-                                        <div class="skill">
+                                        <div className="skill">
                                             <img src={mysql} alt="mySQL Logo" />
                                             <input type="range" min="0" max="100" value="25" disabled />
                                             <span>25%</span>
@@ -180,19 +182,19 @@ const Skills = () => {
                                         <img src={vsc} alt="Visual Studio Code (VSC)" />
                                     </div>
 
-                                    <div class="skill">
+                                    <div className="skill">
                                         <img src={github} alt="GitHub" />
                                     </div>
 
-                                    <div class="skill">
+                                    <div className="skill">
                                         <img src={git} alt="Git" />
                                     </div>
 
-                                    <div class="skill">
+                                    <div className="skill">
                                         <img src={xammpp} alt="XAMPP" />
                                     </div>
 
-                                    <div class="skill">
+                                    <div className="skill">
                                         <img src={microsoft} alt="Microsoft 365" />
                                     </div>
                                 </div>

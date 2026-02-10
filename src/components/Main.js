@@ -80,7 +80,9 @@ const Main = () => {
                                     <Graduate sx={{ fontSize: 45 }} />
                                     <div>
                                         <p>BSIT, Polytechnic University of the Philippines — Magna Cum Laude</p>
-                                        <li>Focus on Front-End Development, UI/UX Design & basic troubleshooting</li>
+                                        <ul>
+                                            <li>Focus on Front-End Development, UI/UX Design & basic troubleshooting</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className="logos">
@@ -93,7 +95,9 @@ const Main = () => {
                                     <Codes sx={{ fontSize: 45 }} />
                                     <div>
                                         <p>Front-End Skills</p>
-                                        <li>Focused on creating seamless web experiences through front-end technologies.</li>
+                                        <ul>
+                                            <li>Focused on creating seamless web experiences through front-end technologies.</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className="logos">
@@ -111,7 +115,9 @@ const Main = () => {
                                     <Design sx={{ fontSize: 45 }} />
                                     <div>
                                         <p>Design Tools</p>
-                                        <li>Skilled in visual design and prototyping.</li>
+                                        <ul>
+                                            <li>Skilled in visual design and prototyping.</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className="logos">

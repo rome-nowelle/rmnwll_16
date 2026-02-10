@@ -51,9 +51,8 @@ const Project = () => {
                                             color: activeCategory === cat ? '#cbc100' : 'white',
                                             cursor: 'pointer',
                                             border: 'none',
-                                            marginRight: '10px',
                                             background: 'transparent',
-                                            fontSize: '16px',
+                                            fontSize: '15px',
                                         }}
                                     >
                                         {cat}

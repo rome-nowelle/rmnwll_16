@@ -1,5 +1,5 @@
 // Assets
-import profilePic from '../assets/img/profile-pic.jpg'; 
+import profilePic from '../assets/img/profile-pic.jpg';
 
 // Icons
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
@@ -25,7 +25,11 @@ const LeftSection = () => {
                         <EmailRoundedIcon sx={{ fontSize: 25 }} />
                         <div className="info">
                             <span>Email</span>
-                            <p>romenowellesanares@gmail.com</p>
+                            <p>
+                                <a href="mailto:romenowellesanares@gmail.com">
+                                    romenowellesanares@gmail.com
+                                </a>
+                            </p>
                         </div>
                     </li>
 
@@ -33,7 +37,9 @@ const LeftSection = () => {
                         <PhoneAndroidRoundedIcon sx={{ fontSize: 25 }} />
                         <div className="info">
                             <span>Contact Number</span>
-                            <p>09954851594</p>
+                            <p>
+                                <a href="tel:+639954851594">09954851594</a>
+                            </p>
                         </div>
                     </li>
 
@@ -47,7 +53,7 @@ const LeftSection = () => {
                 </ul>
             </div>
 
-            
+
         </div>
     );
 };
