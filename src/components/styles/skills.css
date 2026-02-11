@@ -370,4 +370,38 @@
     .certification p {
         font-size: 11.5px;
     }
+
+    .tech-skills {
+        padding: 15px;
+    }
+
+    .tech-skills h4 {
+        font-size: 12.5px;
+    }
+
+    .skill img {
+        height: 34px;
+        width: 34px;
+        object-fit: contain;
+    }
+
+    .backend-uiux {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .t-skills {
+        flex-wrap: nowrap;
+    }
+
+    .other-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .other-text {
+        font-size: 11px;
+    }
 }

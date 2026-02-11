@@ -99,6 +99,9 @@
         font-size: 12px;
     }
 
+    .cardstyle img {
+        height: 150px;
+    }
     
     .overlay p {
         font-size: 7px;
