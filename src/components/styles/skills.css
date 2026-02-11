@@ -404,4 +404,8 @@
     .other-text {
         font-size: 11px;
     }
+
+    .p-skills li {
+        font-size: 14px;
+    }
 }
