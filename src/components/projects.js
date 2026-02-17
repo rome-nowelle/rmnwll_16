@@ -31,11 +31,13 @@ const Project = () => {
         : projects.filter(project => project.category === activeCategory);
 
     return (
-        <div className="main-container">
+        <div className="main-container project-page">
             <div className="container">
                 <div className="main">
                     {/* Left Section */}
-                    <LeftSection />
+                    <div className="projects-left">
+                        <LeftSection />
+                    </div>
 
                     {/* Right Section */}
                     <div className="right-section">

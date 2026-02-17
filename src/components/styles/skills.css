@@ -42,6 +42,7 @@
 .cert-header span {
     font-size: 15px;
     font-weight: lighter;
+    color: #999;
 }
 
 /* Technical Skills*/
@@ -354,6 +355,20 @@
 }
 
 @media (max-width: 768px) {
+
+    .skills-page .skills-left {
+        display: none;
+    }
+
+    .skills-page .main {
+        flex-direction: column;
+    }
+
+    .skills-page .right-section {
+        width: 100%;
+        min-height: 100vh;
+    }
+
     .cert-title h4 {
         font-size: 12px;
     }

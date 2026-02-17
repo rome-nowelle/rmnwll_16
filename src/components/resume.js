@@ -18,11 +18,13 @@ const Resume = () => {
     }, []);
 
     return (
-        <div className="main-container">
+        <div className="main-container resume-page">
             <div className="container">
                 <div className="main">
                     {/* Left Section */}
-                    <LeftSection />
+                    <div className="resume-left">
+                        <LeftSection />
+                    </div>
 
                     {/* Right Section */}
                     <div className="right-section">
@@ -40,7 +42,7 @@ const Resume = () => {
                                 </div>
                                 <span>2021 - 2025</span>
                             </div>
-                            <p>Bachelor of Science in Information Technology (BSIT)</p>
+                            <p>Bachelor of Science in Information Technology </p>
                             <div className="honors">
                                 <SchoolRoundedIcon />
                                 <h4>Magna Cum Laude</h4>
@@ -64,7 +66,7 @@ const Resume = () => {
                                 </div>
                                 <span>2019 - 2021</span>
                             </div>
-                            <p>Science, Technology, Engineering and Mathematics (STEM)</p>
+                            <p>Science, Technology, Engineering and Mathematics </p>
                             <div className="honors">
                                 <SeniorHigh />
                                 <h4>High Honors</h4>
@@ -91,7 +93,7 @@ const Resume = () => {
                             </div>
                             <p>Ayala Ave. Makati City, Cavite, Philippines</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>Front-end Web Developer Intern</h4>
                             </div>
                             <div className="details">
@@ -115,7 +117,7 @@ const Resume = () => {
                             </div>
                             <p>Civil Service Commission</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>Certificate of Eligibility</h4>
                             </div>
                         </div>
@@ -133,7 +135,7 @@ const Resume = () => {
                             </div>
                             <p>Polytechnic University of the Philippines</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>UI/UX Cadet</h4>
                             </div>
                         </div>

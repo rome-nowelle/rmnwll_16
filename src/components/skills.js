@@ -57,11 +57,13 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="main-container">
+        <div className="main-container skills-page">
             <div className="container">
                 <div className="main">
                     {/* Left Section */}
-                    <LeftSection />
+                    <div className="skills-left">
+                        <LeftSection />
+                    </div>
 
                     {/* Right Section */}
                     <div className="right-section">

@@ -45,6 +45,7 @@
 .edu-header span {
     font-size: 15px;
     font-weight: 200;
+    color: #999;
 }
 
 .honors {
@@ -113,6 +114,7 @@
 .ex-header span {
     font-size: 15px;
     font-weight: lighter;
+    color: #999;
 }
 
 .position {
@@ -161,6 +163,7 @@
 .org-header span {
     font-size: 15px;
     font-weight: lighter;
+    color: #999;
 }
 
 .spanie {
@@ -183,6 +186,18 @@
 
 @media (max-width: 768px) {
 
+    .resume-page .resume-left {
+        display: none;
+    }
+
+    .resume-page .main {
+        flex-direction: column;
+    }
+
+    .resume-page .right-section {
+        width: 100%;
+    }
+
     /* Section Title */
     .right-section h3 {
         font-size: 16px;
@@ -194,9 +209,9 @@
         align-items: flex-start;
     }
 
-    .edu-header > span,
-    .ex-header > span,
-    .org-header > span {
+    .edu-header>span,
+    .ex-header>span,
+    .org-header>span {
         font-size: 12px;
         font-weight: 400;
         color: #999;
@@ -219,6 +234,7 @@
 
     .edu-title h4 .spannie {
         font-size: 11px;
+        color: #ffffff;
     }
 
     /* Paragraphs & Lists */

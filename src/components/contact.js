@@ -1,4 +1,4 @@
-import { useEffect,useRef } from "react";
+import { useEffect, useRef } from "react";
 
 // Email JS
 import emailjs from "@emailjs/browser";
@@ -46,11 +46,13 @@ const Contact = () => {
     };
 
     return (
-        <div className="main-container">
+        <div className="main-container contact-page">
             <div className="container">
                 <div className="main">
                     {/* Left Section */}
-                    <LeftSection />
+                    <div className="contact-left">
+                        <LeftSection />
+                    </div>
 
                     {/* Right Section */}
                     <div className="right-section">
