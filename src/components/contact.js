@@ -106,6 +106,17 @@ const Contact = () => {
                                     </div>
                                     <h4>my Resume</h4>
                                 </div>
+
+                                <div className="number-email">
+                                    <div className="numero">
+                                        <span>Contact Number:</span>
+                                        <p>09954851594</p>
+                                    </div>
+                                    <div className="email-s">
+                                        <span>Email:</span>
+                                        <p>romenowellesanares@gmail.com</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
