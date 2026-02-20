@@ -12,7 +12,6 @@ import css from '../assets/img/CSS.png';
 import javascript from '../assets/img/JavaScript.png';
 import bootstrap from '../assets/img/Bootstrap.png';
 import react from '../assets/img/React.png';
-import typescript from '../assets/img/Typescript.png';
 import figma from '../assets/img/Figma.png';
 import canva from '../assets/img/Canva.png';
 import php from '../assets/img/PHP.png';
@@ -123,12 +122,6 @@ const Skills = () => {
                                         <img src={react} alt="React.js Logo" />
                                         <input type="range" min="0" max="100" value="45" disabled />
                                         <span>45%</span>
-                                    </div>
-
-                                    <div className="skill">
-                                        <img src={typescript} alt="React.js Logo" />
-                                        <input type="range" min="0" max="100" value="5" disabled />
-                                        <span>5%</span>
                                     </div>
                                 </div>
                             </div>

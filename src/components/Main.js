@@ -13,7 +13,6 @@ import css from '../assets/img/CSS.png';
 import javascript from '../assets/img/JavaScript.png';
 import bootstrap from '../assets/img/Bootstrap.png';
 import react from '../assets/img/React.png';
-import typescript from '../assets/img/Typescript.png';
 import figma from '../assets/img/Figma.png';
 import canva from '../assets/img/Canva.png';
 
@@ -106,7 +105,6 @@ const Main = () => {
                                     <img src={javascript} alt="JavaScript Logo"></img>
                                     <img src={bootstrap} alt="Bootstrap Logo"></img>
                                     <img src={react} alt="React.js Logo"></img>
-                                    <img src={typescript} alt="React.js Logo"></img>
                                 </div>
                             </div>
 
