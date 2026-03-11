@@ -55,6 +55,22 @@ const Skills = () => {
         updateRangeStyles();
     }, []);
 
+    const certifications = [
+        {
+            title: "Certified in Cybersecurity (CC) ISC2",
+            year: 2024,
+            org: "ISC2 Cyber Security",
+            status: "Validation of Completion"
+        },
+
+        {
+            title: "Network Addressing and Basic Troubleshooting",
+            year: 2026,
+            org: "Cisco Networking Academy",
+            status: "Certificate of Course Completion"
+        }
+    ];
+
     return (
         <div className="main-container skills-page">
             <div className="container">
@@ -71,20 +87,22 @@ const Skills = () => {
                         {/* Certification */}
                         <h3>Certification</h3>
 
-                        <div className="certification">
-                            <div className="cert-header">
-                                <div className="cert-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
-                                    <h4>Certified in Cybersecurity (CC) ISC2</h4>
+                        {certifications.map((certs, index) => (
+                            <div className="certification" key={index}>
+                                <div className="cert-header">
+                                    <div className="cert-title">
+                                        <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                        <h4>{certs.title}</h4>
+                                    </div>
+                                    <span>{certs.year}</span>
                                 </div>
-                                <span>2024</span>
+                                <p>{certs.org}</p>
+                                <div className="position">
+                                    <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
+                                    <h4>{certs.status}</h4>
+                                </div>
                             </div>
-                            <p>ISCP2 Cyber Security</p>
-                            <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }}/>
-                                <h4>Validation of Completion</h4>
-                            </div>
-                        </div>
+                        ))}
 
                         <div className="tech-skills">
                             <h4>Technical Skills</h4>

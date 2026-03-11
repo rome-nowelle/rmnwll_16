@@ -107,9 +107,9 @@ const Resume = () => {
 
                         {/* Eligibility */}
                         <h3>Eligibility</h3>
-                        <div class="eligibility">
+                        <div className="eligibility">
                             <div className="org-header">
-                                <div class="org-title">
+                                <div className="org-title">
                                     <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
                                     <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
                                 </div>
