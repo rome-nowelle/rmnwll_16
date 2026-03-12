@@ -1,5 +1,5 @@
 // Assets
-import profilePic from '../assets/img/profile-pic.jpg';
+import profilePic from '../assets/img/profile-pic.png';
 
 // Icons
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';

@@ -53,9 +53,8 @@ hr {
     max-width: 325px;
     height: 400px;
     margin-bottom: 26px;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .personal-info {
@@ -72,7 +71,7 @@ hr {
 
 .personal-info p {
     font-size: 15px;
-    color: #ffcc00;
+    color: #fece35;
     text-transform: uppercase;
 }
 
