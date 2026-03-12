@@ -16,7 +16,6 @@ import react from '../assets/img/React.png';
 import figma from '../assets/img/Figma.png';
 import canva from '../assets/img/Canva.png';
 
-
 // Icons
 import Graduate from '@mui/icons-material/School';
 import Codes from '@mui/icons-material/Code';

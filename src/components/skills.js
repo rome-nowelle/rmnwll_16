@@ -71,6 +71,7 @@ const Skills = () => {
         }
     ];
 
+
     return (
         <div className="main-container skills-page">
             <div className="container">

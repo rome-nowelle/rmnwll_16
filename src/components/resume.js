@@ -9,13 +9,38 @@ import LeftSection from './LeftSection';
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
-import SeniorHigh from '@mui/icons-material/WorkspacePremiumRounded';
 import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
 
 const Resume = () => {
     useEffect(() => {
         document.title = "Rmnwll_ - Resume"
     }, []);
+
+    const education = [
+        {
+            title: "Polytechnic University of the Philippines - Main Campus",
+            school_year: "2021 - 2025",
+            course: "Bachelor of Science in Information Technology",
+            status: "Validation of Completion",
+            honors: "Magna Cum Laude",
+            details: [
+                "President’s Lister (2021–2025) - Maintained consistent academic excellence.",
+                "Capstone Project - Online Barangay Incident Reporting & Management Tool.",
+                "Internship Project - Appointment Scheduling System for veterinary and grooming services."
+            ]
+        },
+        {
+            title: "Benedictine Institute of Learning - Imus Cavite",
+            school_year: "2019 - 2021",
+            course: "Science, Technology, Engineering and Mathematics",
+            honors: "High Honors",
+            details: [
+                "Web Development Experience - Basic experience in web development via Google Sites.",
+                "Microsoft Office Proficiency - Improved skills in Microsoft Office applications.",
+                "Organized Approach - Developed an organized and detail-oriented approach in school tasks and group work."
+            ]
+        }
+    ];
 
     return (
         <div className="main-container resume-page">
@@ -33,52 +58,29 @@ const Resume = () => {
                         {/* Educational Attainment */}
                         <h3>Educational Attainment</h3>
 
-                        <div className="education">
-                            <div className="edu-header">
-                                <div className="edu-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
-                                    <h4>Polytechnic University of the Philippines - <span className="spannie">Main
-                                        Campus</span></h4>
-                                </div>
-                                <span>2021 - 2025</span>
-                            </div>
-                            <p>Bachelor of Science in Information Technology </p>
-                            <div className="honors">
-                                <SchoolRoundedIcon />
-                                <h4>Magna Cum Laude</h4>
-                            </div>
-                            <div className="details">
-                                <ul>
-                                    <li>President’s Lister (2021–2025) – Maintained consistent academic excellence.</li>
-                                    <li>Capstone Project: Online Barangay Incident Reporting & Management Tool.</li>
-                                    <li>Internship Project: Appointment Scheduling System for veterinary and grooming services.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        {education.map((edu, index) => (
+                            <div className="education">
+                                <div className="edu-header" key={index}>
+                                    <div className="edu-title">
+                                        <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
 
-                        <div className="education">
-                            <div className="edu-header">
-                                <div className="edu-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
-                                    <h4>Benedictine Institute of Learning - <span className="spannie">Imus Cavite</span>
-                                    </h4>
+                                        <h4>{edu.title}</h4>
+                                    </div>
+                                    <span>{edu.school_year}</span>
                                 </div>
-                                <span>2019 - 2021</span>
-                            </div>
-                            <p>Science, Technology, Engineering and Mathematics </p>
-                            <div className="honors">
-                                <SeniorHigh />
-                                <h4>High Honors</h4>
-                            </div>
-                            <div className="details">
-                                <ul>
-                                    <li>Basic experience in web development via Google Sites, improved Microsoft Office, and
-                                        early IT exploration.</li>
-                                    <li>Developed an organized and detail-oriented approach in school tasks and group work.</li>
-                                </ul>
-                            </div>
-                        </div>
+                                <p>{edu.course}</p>
+                                <div className="honors">
+                                    <SchoolRoundedIcon />
+                                    <h4>{edu.honors}</h4>
+                                </div>
+                                <div className="details">
+                                    <ul>
+                                        <li>{edu.details[0]}</li>
+                                        <li>{edu.details[1]}</li>
+                                        <li>{edu.details[2]}</li>
+                                    </ul>
+                                </div>
+                            </div>))}
 
                         {/* Experience */}
                         <h3>Experience</h3>

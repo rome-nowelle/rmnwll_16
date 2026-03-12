@@ -1,16 +1,43 @@
 // Assets
-import profilePic from '../assets/img/profile-pic.png';
+import profilePic from "../assets/img/profile-pic.png";
 
 // Icons
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import PhoneAndroidRoundedIcon from '@mui/icons-material/PhoneAndroidRounded';
-import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import PhoneAndroidRoundedIcon from "@mui/icons-material/PhoneAndroidRounded";
+import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 
 // LeftSection Component
 const LeftSection = () => {
+
+    const contacts = [
+        {
+            icon: <EmailRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            label: "Email",
+            value: "romenowellesanares@gmail.com",
+            link: "mailto:romenowellesanares@gmail.com"
+        },
+        {
+            icon: <PhoneAndroidRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            label: "Contact Number",
+            value: "09954851594",
+            link: "tel:+639954851594"
+        },
+        {
+            icon: <LocationOnRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            label: "Location",
+            value: "Imus City, Cavite, Philippines"
+        }
+    ];
+
     return (
         <div className="left-section">
-            <img src={profilePic} alt="Rmnwll_" className="profile-pic" />
+
+            <img
+                src={profilePic}
+                alt="Rome Nowelle R. Sanares"
+                className="profile-pic"
+                loading="lazy"
+            />
 
             <div className="personal-info">
                 <h2>Rome Nowelle R. Sanares</h2>
@@ -21,38 +48,27 @@ const LeftSection = () => {
 
             <div className="contact-info">
                 <ul>
-                    <li>
-                        <EmailRoundedIcon sx={{ fontSize: 25 }} />
-                        <div className="info">
-                            <span>Email</span>
-                            <p>
-                                <a href="mailto:romenowellesanares@gmail.com">
-                                    romenowellesanares@gmail.com
-                                </a>
-                            </p>
-                        </div>
-                    </li>
+                    {contacts.map((item, index) => (
+                        <li key={index}>
+                            {item.icon}
 
-                    <li>
-                        <PhoneAndroidRoundedIcon sx={{ fontSize: 25 }} />
-                        <div className="info">
-                            <span>Contact Number</span>
-                            <p>
-                                <a href="tel:+639954851594">09954851594</a>
-                            </p>
-                        </div>
-                    </li>
+                            <div className="info">
+                                <span>{item.label}</span>
+                                <p>
+                                    {item.link ? (
+                                        <a href={item.link}>
+                                            {item.value}
+                                        </a>
+                                    ) : (
+                                        item.value
+                                    )}
+                                </p>
+                            </div>
 
-                    <li>
-                        <LocationOnRoundedIcon sx={{ fontSize: 25 }} />
-                        <div className="info">
-                            <span>Location</span>
-                            <p>Imus City, Cavite, Philippines</p>
-                        </div>
-                    </li>
+                        </li>
+                    ))}
                 </ul>
             </div>
-
 
         </div>
     );
