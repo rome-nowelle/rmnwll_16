@@ -25,8 +25,6 @@ import microsoft from '../assets/img/Microsoft.png'
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
-import { u } from "framer-motion/client";
-
 
 const Skills = () => {
     useEffect(() => {
