@@ -33,6 +33,10 @@ hr {
     gap: 20px;
     width: 100%;
 }
+.left-section,
+.right-section {
+    height: 100%;
+}
 
 /* Left Section */
 .left-section {
