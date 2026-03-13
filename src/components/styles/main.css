@@ -44,7 +44,9 @@ hr {
     padding: 45px 45px 20px;
     max-width: 450px;
     color: var(--primary-color);
-    background-image: url('/src/assets/img/bg-main.jpg');
+    background-image: 
+        linear-gradient(to top, rgba(0,0,0,0.5), transparent 90%), /* gradient sa bottom */
+        url('/src/assets/img/bg-main.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:bottom;
@@ -150,6 +152,18 @@ hr {
     transform: scale(1.2);
 }
 
+.button-links {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-links{
+    display: none;
+}
+
+
 /* Right Section */
 .right-section {
     padding: 30px 30px 20px;
@@ -213,13 +227,14 @@ hr {
     padding: 20px 15px;
     border-radius: 15px;
     text-align: center;
-
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 
     transition: transform 0.3s ease, 
                 box-shadow 0.3s ease, 
                 background-color 0.3s ease,
                 color 0.3s ease;
+    
+    background-color: var(--background-color);
 }
 
 .what-i-do:hover {
@@ -280,6 +295,7 @@ hr {
         0 6px 12px rgba(0,0,0,0.2);
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--background-color);
 }
 
 .highlight-item:hover {
@@ -335,6 +351,7 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     padding: 18px 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--background-color);
 }
 
 .language:hover {
@@ -383,6 +400,7 @@ hr {
 
     .main-container {
         padding-top: 60px;
+        animation: fadeUp .8s ease;
     }
 
     .left-section {
@@ -390,21 +408,44 @@ hr {
         border-right: none;
         border-bottom: 5px solid #fece35;
         background-attachment: scroll;
+        animation: fadeUp .9s ease;
     }
 
     .profile-pic {
         max-width: 100%;
         height: auto;
         margin-top: 10px;
+        animation: fadeUp 1s ease;
     }
 
     .personal-info,
     .contact-info {
         margin: 10px 0;
+        animation: fadeUp 1.1s ease;
     }
+
+    .button-links{
+    display: flex;
+    justify-content: space-around;
+  }
+.btn-links {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: var(--background-color);
+}
+
+.btn-links:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
 
     .right-section {
         padding: 20px 15px;
+        animation: fadeUp 1.2s ease;
     }
 
     .right-section h2 {
@@ -435,6 +476,7 @@ hr {
     .what-i-do-section {
         flex-direction: column;
         gap: 15px;
+        animation: fadeUp 1.3s ease;
     }
 
     .what-i-do {
@@ -452,6 +494,7 @@ hr {
     .info-two {
         margin-left: 0;
         text-align: center;
+        animation: fadeUp 1.4s ease;
     }
 
     .info-two p {
@@ -467,6 +510,7 @@ hr {
         text-align: center;
         gap: 15px;
         margin-left: 0;
+        animation: fadeUp 1.5s ease;
     }
 
     .icon-highlight {
@@ -482,6 +526,7 @@ hr {
         display: flex;
         justify-content: center;
         gap: 15px;
+        animation: fadeUp 1.6s ease;
     }
 
     .language {
@@ -491,9 +536,25 @@ hr {
     /* Footer / Socials */
     .social-links {
         margin: 0;
+        animation: fadeUp 1.7s ease;
     }
 
     .logos {
         margin-bottom: 10px;
+    }
+
+    .right-section h4 {
+        font-size: 16px;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

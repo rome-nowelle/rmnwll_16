@@ -39,6 +39,11 @@ const LeftSection = () => {
                 loading="lazy"
             />
 
+            <div className="button-links">
+                <a href="https://drive.google.com/file/d/1IRkQvE3mrAfuMfUn6DkxrAD4rMbgmMsO/view?usp=sharing" className="btn-links" aria-label="View Resume">View Resume</a>
+                <a href="./contact" className="btn-links" aria-label="Contact Me">Contact Me</a>
+            </div>
+
             <div className="personal-info">
                 <h2>Rome Nowelle R. Sanares</h2>
                 <p>BSIT Graduate</p>
