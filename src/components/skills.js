@@ -19,6 +19,7 @@ import mysql from '../assets/img/MySQL.png';
 import vsc from '../assets/img/vsc.png'
 import github from '../assets/img/github.png';
 import git from '../assets/img/Git.png';
+import netlify from '../assets/img/netlify.png';
 import xammpp from '../assets/img/XAMPP.png';
 import microsoft from '../assets/img/Microsoft.png'
 
@@ -92,6 +93,7 @@ const Skills = () => {
         { img: vsc, alt: "Visual Studio Code Logo"},
         { img: github, alt: "GitHub Logo"},
         { img: git, alt: "Git Logo"},
+        { img: netlify, alt: "Netlify Logo"},
         { img: xammpp, alt: "XAMPP Logo"},
         { img: microsoft, alt: "Microsoft Logo"}
     ];
