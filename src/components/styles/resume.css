@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Educational Attainment */
+/* Section Titles */
 .right-section h3 {
     font-size: 19px;
     margin: 30px 0 15px 0;
@@ -12,42 +12,61 @@
     text-indent: 10px;
 }
 
-.education {
+/* Resume Sections */
+.education,
+.experience,
+.organization,
+.eligibility {
     margin-bottom: 25px;
     padding-left: 10px;
 }
 
-.education p {
+.education p,
+.experience p,
+.organization p,
+.eligibility p {
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     text-indent: 23px;
     color: #909090;
     letter-spacing: 1px;
 }
 
-.edu-header {
+/* Headers */
+.edu-header,
+.ex-header,
+.org-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.edu-title {
+/* Titles */
+.edu-title,
+.ex-title,
+.org-title {
     display: flex;
     gap: 10px;
 }
 
-.edu-title h4 {
+.edu-title h4,
+.ex-title h4,
+.org-title h4 {
     font-size: 16px;
     margin-bottom: 5px;
     letter-spacing: 1.2px;
 }
 
-.edu-header span {
+/* Date / Span */
+.edu-header span,
+.ex-header span,
+.org-header span {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     color: #999;
 }
 
+/* Honors Section */
 .honors {
     display: flex;
     gap: 5px;
@@ -61,6 +80,7 @@
     margin-top: 4px;
 }
 
+/* Details */
 .details {
     margin-top: 8px;
     font-size: 14px;
@@ -70,53 +90,17 @@
 
 .details ul {
     list-style: disc;
-    margin-left: 50px;
+    margin-left: 30px;
     padding-right: 20px;
     text-align: justify;
 }
 
 .details ul li {
     margin-bottom: 3px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
-/* Work Experience */
-.experience {
-    margin-bottom: 25px;
-    padding-left: 10px;
-}
-
-.experience p {
-    font-size: 15px;
-    font-weight: lighter;
-    text-indent: 23px;
-    color: #909090;
-    letter-spacing: 1px;
-}
-
-.ex-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ex-title {
-    display: flex;
-    gap: 10px;
-}
-
-.ex-title h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    letter-spacing: 1.2px;
-}
-
-.ex-header span {
-    font-size: 15px;
-    font-weight: lighter;
-    color: #999;
-}
-
+/* Work Position */
 .position {
     margin-left: 29px;
     margin-top: 8px;
@@ -129,60 +113,11 @@
     letter-spacing: 1px;
 }
 
-/* Organization */
-.organization {
-    margin-bottom: 25px;
-    padding-left: 10px;
-}
-
-.organization p {
-    font-size: 15px;
-    font-weight: lighter;
-    text-indent: 23px;
-    color: #909090;
-    letter-spacing: 1px;
-}
-
-.org-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.org-title {
-    display: flex;
-    gap: 10px;
-}
-
-.org-title h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    letter-spacing: 1.2px;
-}
-
-.org-header span {
-    font-size: 15px;
-    font-weight: lighter;
-    color: #999;
-}
-
+/* Misc */
 .spanie {
     font-weight: 300;
 }
 
-/* Eligibility */
-.eligibility {
-    margin-bottom: 25px;
-    padding-left: 10px;
-}
-
-.eligibility p {
-    font-size: 15px;
-    font-weight: lighter;
-    text-indent: 23px;
-    color: #909090;
-    letter-spacing: 1px;
-}
 
 @media (max-width: 768px) {
 

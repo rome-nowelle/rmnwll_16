@@ -57,10 +57,9 @@ const Resume = () => {
 
                         {/* Educational Attainment */}
                         <h3>Educational Attainment</h3>
-
                         {education.map((edu, index) => (
-                            <div className="education">
-                                <div className="edu-header" key={index}>
+                            <div className="education" key={index}>
+                                <div className="edu-header">
                                     <div className="edu-title">
                                         <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
 

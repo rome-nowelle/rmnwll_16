@@ -32,7 +32,6 @@ hr {
     display: flex;
     gap: 20px;
     width: 100%;
-    /* padding: 0 20px; */
 }
 
 /* Left Section */
@@ -46,10 +45,11 @@ hr {
     background-size: cover;
     background-position:bottom;
     border-right: 5px solid #fece35;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .profile-pic {
+    width: 100%;
     max-width: 325px;
     height: 400px;
     margin-bottom: 26px;
@@ -88,11 +88,10 @@ hr {
 }
 
 .contact-info li {
-    display: flex; 
+    display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 12px;
-    margin-top: 12px;
+    margin: 12px 0;
 }
 
 .info {
@@ -100,6 +99,10 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 10px;
+}
+
+.info a:hover {
+    color: var(--hover-color);
 }
 
 .contact-info i {
@@ -116,7 +119,7 @@ hr {
 .info p {
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .info a {
@@ -134,14 +137,13 @@ hr {
 .social-links a {
     color: var(--primary-color);
     font-size: 20px;
-    transition: color 0.3s;
     cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--hover-color);
-    scale: 1.2;
-    transition: transform 0.3s;
+    transform: scale(1.2);
 }
 
 /* Right Section */
@@ -196,23 +198,29 @@ hr {
 .what-i-do-section {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
     margin-bottom: 30px;
 }
 
 .what-i-do {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 15px;
     border-radius: 15px;
     text-align: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                background-color 0.3s ease,
+                color 0.3s ease;
 }
 
 .what-i-do:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
     background-color: var(--hover-color);
     color: var(--background-color);
 }
@@ -261,19 +269,25 @@ hr {
     gap: 5px;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 13px;
+
+    box-shadow: 
+        0 4px 8px rgba(0,0,0,0.4),
+        0 6px 12px rgba(0,0,0,0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .highlight-item:hover {
     transform: scale(1.03);
-    transition: transform 0.3s;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 
+        0 6px 12px rgba(0,0,0,0.6),
+        0 8px 16px rgba(0,0,0,0.4);
 }
 
 .icon-highlight {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
     font-size: 30px;
     margin-left: 10px;
     gap: 25px;
@@ -282,17 +296,15 @@ hr {
 .icon-highlight p {
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
 }
 
 .icon-highlight li {
     font-size: 11px;
-    font-weight: lighter;
     margin-top: 5px;
     text-indent: 15px;
-    list-style: inside;
+    list-style: circle inside;
     color: #909090;
-    list-style-type: circle;
 }
 
 .logos {
@@ -311,22 +323,24 @@ hr {
     display: flex;
     margin-bottom: 20px;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .language {
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     padding: 18px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .language:hover {
     transform: scale(1.05);
-    transition: transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
 }
 
 .language h1 {
     font-size: 14px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
 }
 

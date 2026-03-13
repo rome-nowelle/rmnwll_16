@@ -13,13 +13,13 @@ const Footer = () => {
     return (
         <footer className="footer-cont">
             <div className="social-links">
-                <a href="https://www.facebook.com/rome.nowelle" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/rome.nowelle" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <FacebookIcon />
                 </a>
-                <a href="https://www.linkedin.com/in/rome-nowelle-sanares/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/rome-nowelle-sanares/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <LinkedInIcon />
                 </a>
-                <a href="https://github.com/rome-nowelle" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/rome-nowelle" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <GitHubIcon />
                 </a>
             </div>

@@ -21,11 +21,17 @@
 .footer img {
     width: 55px;
     height: 55px;
+    transition: filter 0.3s;
 }
 
 .footer img:hover {
     filter: brightness(1.2) drop-shadow(0 0 10px var(--primary-color));
     transition: filter 0.3s;
+}
+
+.footer img:focus {
+    outline: 2px solid var(--hover-color);
+    outline-offset: 4px;
 }
 
 .footer p{
@@ -37,8 +43,11 @@
 
 /* Mobile */
 @media (max-width: 480px) {
-
     .footer-cont{
         flex-direction: column;
+        padding: 15px;
+    }
+    .footer {
+        justify-content: center;
     }
 }
