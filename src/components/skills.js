@@ -75,12 +75,12 @@ const Skills = () => {
         { img: html, alt: "HTML5 Logo", level: 85 },
         { img: css, alt: "CSS Logo", level: 75 },
         { img: javascript, alt: "JavaScript Logo", level: 45 },
-        { img: bootstrap, alt: "Bootstrap Logo", level: 40 },
-        { img: react, alt: "React Logo", level: 45 }
+        { img: bootstrap, alt: "Bootstrap Logo", level: 35 },
+        { img: react, alt: "React Logo", level: 30 }
     ];
 
     const backendSkills = [
-        { img: php, alt: "PHP Logo", level: 85 },
+        { img: php, alt: "PHP Logo", level: 20 },
         { img: mysql, alt: "MySQL Logo", level: 25 },
     ];
 
@@ -223,6 +223,7 @@ const Skills = () => {
                                             <li>UI/UX Prototyping</li>
                                             <li>Responsive Web Design</li>
                                             <li>Cybersecurity Fundamentals</li>
+                                            <li>Basic Troubleshooting</li>
 
                                         </ul>
                                     </div>
