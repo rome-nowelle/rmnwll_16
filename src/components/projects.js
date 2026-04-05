@@ -51,7 +51,7 @@ const Project = () => {
                 { name: "MySQL", icon: mysql }
             ],
             links: [
-                { name: "GitHub", icon: github, url: 'https://github.com/yourusername/bigbrew' },
+                { name: "GitHub", icon: github, url: 'https://github.com/rome-nowelle/big-brew' },
                 { name: "Live", icon: bigbrew, url: 'https://bigbrew-demo.vercel.app' }
             ]
         },
@@ -70,9 +70,9 @@ const Project = () => {
                 { name: "MySQL", icon: mysql }
             ],
             links: [
-                { name: "GitHub", icon: github, url: 'https://github.com/yourusername/justifile' },
-                { name: "Live", icon: justifileAdmin, url: 'https://justifile-demo.vercel.app' },
-                { name: "Live", icon: justifileResident, url: 'https://justifile-demo.vercel.app' }
+                // { name: "GitHub", icon: github, url: 'https://github.com/rome-nowelle/justifile' },
+                { name: "Live", icon: justifileAdmin, url: 'https://notyetrelease' },
+                { name: "Live", icon: justifileResident, url: 'https://notyetrelease' }
             ]
         },
         {
@@ -89,8 +89,8 @@ const Project = () => {
                 { name: "React", icon: react }
             ],
             links: [
-                { name: "GitHub", icon: github, url: 'https://github.com/yourusername/portfolio' },
-                { name: "Live", icon: rmnwll, url: 'https://justifile-demo.vercel.app' }
+                { name: "GitHub", icon: github, url: 'https://github.com/rome-nowelle/rmnwll_16' },
+                { name: "Live", icon: rmnwll, url: 'https://rmnwll.netlify.app/' }
             ]
         },
         {
