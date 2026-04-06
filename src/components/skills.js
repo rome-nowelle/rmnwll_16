@@ -21,7 +21,7 @@ import github from '../assets/img/github.png';
 import git from '../assets/img/Git.png';
 import netlify from '../assets/img/netlify.png';
 import xammpp from '../assets/img/XAMPP.png';
-import microsoft from '../assets/img/Microsoft.png'
+// import microsoft from '../assets/img/Microsoft.png'
 
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
@@ -95,7 +95,7 @@ const Skills = () => {
         { img: git, alt: "Git Logo"},
         { img: netlify, alt: "Netlify Logo"},
         { img: xammpp, alt: "XAMPP Logo"},
-        { img: microsoft, alt: "Microsoft Logo"}
+        // { img: microsoft, alt: "Microsoft Logo"}
     ];
 
 
@@ -113,7 +113,10 @@ const Skills = () => {
                         <h2>Skills</h2>
 
                         {/* Certification */}
-                        <h3>Certification</h3>
+                        <div className="header-section">
+                            <h3>Certifications</h3>
+                            <hr />
+                        </div>
 
                         {certifications.map((certs, index) => (
                             <div className="certification" key={index}>
@@ -186,7 +189,7 @@ const Skills = () => {
 
                             {/* Tools */}
                             <div className="tools">
-                                <h4>Tools</h4>
+                                <h4>Development Tools</h4>
 
                                 <div className="t-skills">
                                     {devtoolSkills.map((skill, index) => (

@@ -68,7 +68,10 @@ const Contact = () => {
                             title="Imus Cavite Map" />
 
                         {/* Contact Form */}
-                        <h3>Contact Form</h3>
+                        <div className="header-section">
+                            <h3>Contact Form</h3>
+                            <hr />
+                        </div>
 
                         <div className="contact-container">
                             <div className="contact-form">

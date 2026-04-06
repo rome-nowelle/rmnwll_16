@@ -141,7 +141,7 @@ const Project = () => {
                                             cursor: 'pointer',
                                             border: 'none',
                                             background: 'transparent',
-                                            fontSize: '15px',
+                                            fontSize: '14px',
                                         }}
                                     >
                                         {cat}

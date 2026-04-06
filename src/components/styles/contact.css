@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--hover-color);
     padding: 20px;
     border-radius: 15px;
 }
@@ -218,7 +218,7 @@ button[type="submit"]:hover {
         padding: 10px;
         background-color: var(--background-color);
         border-radius: 10px;
-        border: 2px solid var(--primary-color);
+        border: 2px solid var(--hover-color);
         margin-top: 15px;
         margin-right: 10px;
     }
@@ -243,5 +243,23 @@ button[type="submit"]:hover {
     .email-s p{
         font-size: 13px;
         margin-top: 3px;
+    }
+    
+    .submit {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .submit button {
+        width: 100%;
+        border-radius: 10px;
+        order: 1;
+    }
+
+    .submit p {
+        font-size: 9px;
+        order: 2;
+        margin-top: 8px;
+        margin-top: 15px;
     }
 }

@@ -26,7 +26,7 @@ import Design from '@mui/icons-material/ViewListRounded';
 // Main Component
 const Main = () => {
     useEffect(() => {
-        document.title = "Rmnwll_"
+        document.title = "Rmnwll_ - Portfolio"
     }, []);
 
     return (
@@ -43,12 +43,14 @@ const Main = () => {
                         <p className="qoute">“Creating modern, responsive, and user-friendly web experiences.”</p>
                         <p className="description"> I’m Rome Nowelle R. Sanares, a fresh graduate of BS Information Technology,
                             Magna Cum Laude, from
-                            t he Polytechnic University of the Philippines. I have a strong interest in front-end development and
+                            the Polytechnic University of the Philippines. I have a strong interest in front-end development and
                             UI/UX design, and I enjoy creating responsive and user-friendly websites. I’m eager to apply my
                             knowledge and creativity as I begin my professional journey as a Front-End Developer or UI/UX
                             Designer, and I look forward to the opportunity to contribute and collaborate with your team.</p>
 
-                        <h3>What I'm Doing</h3>
+                        <div className="text-margin">
+                            <h4>What I'm Doing</h4>
+                        </div>
 
                         <div className="what-i-do-section">
                             <div className="what-i-do">

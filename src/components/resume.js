@@ -55,8 +55,39 @@ const Resume = () => {
                     <div className="right-section">
                         <h2>Resume</h2>
 
+                        {/* Experience */}
+                        <div className="header-section">
+                            <h3>Experience</h3>
+                            <hr />
+                        </div>
+
+                        <div className="experience">
+                            <div className="ex-header">
+                                <div className="ex-title">
+                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                    <h4>SMESoft Inc.</h4>
+                                </div>
+                                <span>March 2025 to June 2025</span>
+                            </div>
+                            <p>Ayala Ave., Makati City, Metro Manila, Philippines</p>
+                            <div className="position">
+                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
+                                <h4>Front-end Web Developer Intern</h4>
+                            </div>
+                            <div className="details">
+                                <ul>
+                                    <li>Designed and developed an appointment scheduling system that improved booking
+                                        efficiency, enhanced navigation, aligned UI/UX with an existing platform, and supported
+                                        coding, testing, and troubleshooting to ensure responsive design across devices.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         {/* Educational Attainment */}
-                        <h3>Educational Attainment</h3>
+                        <div className="header-section">
+                            <h3>Educational Attainment</h3>
+                            <hr />
+                        </div>
                         {education.map((edu, index) => (
                             <div className="education" key={index}>
                                 <div className="edu-header">
@@ -81,33 +112,11 @@ const Resume = () => {
                                 </div>
                             </div>))}
 
-                        {/* Experience */}
-                        <h3>Experience</h3>
-
-                        <div className="experience">
-                            <div className="ex-header">
-                                <div className="ex-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
-                                    <h4>SMESoft Inc.</h4>
-                                </div>
-                                <span>March 2025 to June 2025</span>
-                            </div>
-                            <p>Ayala Ave. Makati City, Cavite, Philippines</p>
-                            <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
-                                <h4>Front-end Web Developer Intern</h4>
-                            </div>
-                            <div className="details">
-                                <ul>
-                                    <li>Designed and developed an appointment scheduling system that improved booking
-                                        efficiency, enhanced navigation, aligned UI/UX with an existing platform, and supported
-                                        coding, testing, and troubleshooting to ensure responsive design across devices.</li>
-                                </ul>
-                            </div>
-                        </div>
-
                         {/* Eligibility */}
-                        <h3>Eligibility</h3>
+                        <div className="header-section">
+                            <h3>Eligibility</h3>
+                            <hr />
+                        </div>
                         <div className="eligibility">
                             <div className="org-header">
                                 <div className="org-title">
@@ -124,7 +133,10 @@ const Resume = () => {
                         </div>
 
                         {/* Organization */}
-                        <h3>Organization</h3>
+                        <div className="header-section">
+                            <h3>Organization</h3>
+                            <hr />
+                        </div>
 
                         <div className="organization">
                             <div className="org-header">
