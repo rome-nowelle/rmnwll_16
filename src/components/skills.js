@@ -25,7 +25,6 @@ import xammpp from '../assets/img/XAMPP.png';
 
 // Icons
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
-import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
 
 const Skills = () => {
     useEffect(() => {
@@ -56,19 +55,21 @@ const Skills = () => {
     }, []);
 
     const certifications = [
-        {
-            title: "Certified in Cybersecurity (CC) ISC2",
-            year: 2024,
-            org: "ISC2 Cyber Security",
-            status: "Validation of Completion"
-        },
 
         {
             title: "Network Addressing and Basic Troubleshooting",
             year: 2026,
             org: "Cisco Networking Academy",
             status: "Certificate of Course Completion"
+        },
+        {
+            title: "Certified in Cybersecurity (CC) ISC2",
+            year: 2024,
+            org: "ISC2 Cyber Security",
+            status: "Validation of Completion"
         }
+
+
     ];
 
     const frontendSkills = [
@@ -90,11 +91,11 @@ const Skills = () => {
     ];
 
     const devtoolSkills = [
-        { img: vsc, alt: "Visual Studio Code Logo"},
-        { img: github, alt: "GitHub Logo"},
-        { img: git, alt: "Git Logo"},
-        { img: netlify, alt: "Netlify Logo"},
-        { img: xammpp, alt: "XAMPP Logo"},
+        { img: vsc, alt: "Visual Studio Code Logo" },
+        { img: github, alt: "GitHub Logo" },
+        { img: git, alt: "Git Logo" },
+        { img: netlify, alt: "Netlify Logo" },
+        { img: xammpp, alt: "XAMPP Logo" },
         // { img: microsoft, alt: "Microsoft Logo"}
     ];
 
@@ -122,21 +123,23 @@ const Skills = () => {
                             <div className="certification" key={index}>
                                 <div className="cert-header">
                                     <div className="cert-title">
-                                        <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                        <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px', color: '#fece35' }} />
                                         <h4>{certs.title}</h4>
                                     </div>
                                     <span>{certs.year}</span>
                                 </div>
                                 <p>{certs.org}</p>
                                 <div className="position">
-                                    <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                     <h4>{certs.status}</h4>
                                 </div>
                             </div>
                         ))}
 
                         <div className="tech-skills">
-                            <h4>Technical Skills</h4>
+                            <div className="tech-skills_section">
+                                <h3>Technical Skills</h3>
+                                <hr />
+                            </div>
 
                             {/* Frontend Skills */}
                             <div className="frontend">
@@ -204,7 +207,10 @@ const Skills = () => {
                         {/* Soft Skills */}
                         <div className="other-skills">
                             <div className="my-skills">
-                                <h5 className="other-text">Soft Skills</h5>
+                                <div className="other-skills_section">
+                                    <h4>Soft Skills</h4>
+                                    <hr />
+                                </div>
                                 <div className="o-skills">
                                     <div className="p-skills">
                                         <ul>
@@ -219,7 +225,10 @@ const Skills = () => {
                             </div>
 
                             <div className="my-skills">
-                                <h5 className="other-text">Other Skills</h5>
+                                <div className="other-skills_section">
+                                    <h4>Other Skills</h4>
+                                    <hr />
+                                </div>
                                 <div className="o-skills">
                                     <div className="p-skills">
                                         <ul>

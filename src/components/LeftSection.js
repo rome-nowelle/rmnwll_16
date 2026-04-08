@@ -11,19 +11,19 @@ const LeftSection = () => {
 
     const contacts = [
         {
-            icon: <EmailRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            icon: <EmailRoundedIcon sx={{ fontSize: 25, color: '#fece35' }} aria-hidden="true" />,
             label: "Email",
             value: "romenowellesanares@gmail.com",
             link: "mailto:romenowellesanares@gmail.com"
         },
         {
-            icon: <PhoneAndroidRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            icon: <PhoneAndroidRoundedIcon sx={{ fontSize: 25, color: '#fece35' }} aria-hidden="true" />,
             label: "Contact Number",
             value: "09954851594",
             link: "tel:+639954851594"
         },
         {
-            icon: <LocationOnRoundedIcon sx={{ fontSize: 25 }} aria-hidden="true" />,
+            icon: <LocationOnRoundedIcon sx={{ fontSize: 25, color: '#fece35' }} aria-hidden="true" />,
             label: "Location",
             value: "Imus City, Cavite, Philippines"
         }

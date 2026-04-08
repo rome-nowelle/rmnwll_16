@@ -5,16 +5,19 @@
 }
 
 .certification {
-    margin-bottom: 25px;
-    padding-left: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: 8px;
 }
 
 .certification p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: lighter;
-    text-indent: 23px;
+    text-indent: 26px;
     color: #909090;
     letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
 .cert-header {
@@ -40,9 +43,12 @@
 }
 
 .cert-header span {
-    font-size: 15px;
-    font-weight: lighter;
-    color: #ffffff;
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--background-color);
+    padding: 3px 8px;
+    background-color: var(--hover-color);
+    border-radius: 4px;
 }
 
 /* Technical Skills*/
@@ -54,15 +60,34 @@
     background: var(--background-color);
 }
 
-.tech-skills h4 {
-    font-size: 15px;
-    margin-bottom: 15px;
+.tech-skills_section h3 {
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
     text-transform: uppercase;
-    text-shadow: #2b2b2b;
     text-indent: 5px;
+    padding: 6px 10px;
+    color: var(--background-color);
+    background-color: var(--hover-color);
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
 }
+
+.tech-skills_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-skills_section hr {
+    flex: 1;
+    border: none;
+    height: 2.5px;
+    background-color: var(--hover-color);
+    margin: 0 0 10px 10px;
+    border-radius: 2px;
+}
+
 
 /* Frontend Skills */
 .frontend {
@@ -80,6 +105,7 @@
     text-shadow: #2b2b2b;
     text-indent: 5px;
     color: var(--hover-color);
+    background-color: transparent;
 }
 
 .f-skills {
@@ -183,7 +209,7 @@
     width: 100%;
 }
 
-.backend,
+.backend h4,
 .uiux h4 {
     font-size: 14px;
     letter-spacing: 1.5px;
@@ -192,6 +218,8 @@
     text-shadow: #2b2b2b;
     text-indent: 5px;
     color: var(--hover-color);
+    background-color: transparent;
+    margin-bottom: 8px;
 }
 
 .b-skills,
@@ -200,7 +228,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-top: 10px;
     padding: 5px 60px;
 }
 
@@ -220,6 +247,7 @@
     text-shadow: #2b2b2b;
     text-indent: 5px;
     color: var(--hover-color);
+        background-color: transparent;
 }
 
 .f-skills {
@@ -242,19 +270,47 @@
     margin-top: 25px;
     display: flex;
     gap: 20px;
+    width: 100%;
+}
+
+.other-skills_section h4{
+    font-size: 13px;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    padding: 7px;
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    border-radius: 6px;
+}
+
+.other-skills_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-skills_section hr {
+    flex: 1;
+    border: none;
+    height: 2.5px;
+    background-color: var(--hover-color);
+    margin: 0 0 10px 10px;
+    border-radius: 2px;
 }
 
 .my-skills {
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 3px solid transparent;
     background: var(--content-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
+    transition: border 0.3s ease;
 }
 
 .my-skills:hover {
-    box-shadow: 0 4px 8px rgb(255, 255, 255), 0 6px 12px rgb(255, 255, 255);
-    transition: 1.2s;
+    border: 3px solid #ffffff;
 }
 
 .o-skills {
@@ -265,11 +321,22 @@
 }
 
 .p-skills li {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     text-align: left;
-    margin: 3px 30px;
-    list-style: square;
+    margin: 3px 10px;
+    list-style: none;
+
+    counter-increment: mycounter;
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.p-skills li::before {
+    content: counter(mycounter, decimal-leading-zero) " ";
+    color: var(--hover-color);
+    min-width: 30px;
 }
 
 .cont-skill {
@@ -342,17 +409,7 @@
     text-align: center;
 }
 
-.other-text {
-    font-size: 13px;
-    margin: 0 0 15px 0;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    padding: 7px;
-    background-color: var(--hover-color);
-    display: inline-flex;
-    color: #000;
-    border-radius: 10px;
-}
+
 
 @media (max-width: 768px) {
 
@@ -373,16 +430,19 @@
         font-size: 12px;
     }
 
-    .cert-header>span {
-        color: #ffffff;
-        font-size: 12px;
+    .cert-header > span {
+        color: var(--background-color);
+        font-size: 11px;
         font-weight: 400;
         margin-left: 25px;
         margin-bottom: 7px;
+        padding: 3px 8px;
+        background-color: var(--hover-color);
+        border-radius: 4px;
     }
 
     .certification p {
-        font-size: 11.5px;
+        font-size: 11px;
     }
 
     .tech-skills {
@@ -391,6 +451,20 @@
 
     .tech-skills h4 {
         font-size: 12.5px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .tech-skills_section h3,
+    .other-skills_section h4 {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .tech-skills_section hr,
+    .other-skills_section hr {
+        display: none;
     }
 
     .skill img {
@@ -416,7 +490,11 @@
     }
 
     .other-text {
-        font-size: 11px;
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 2px;
     }
 
     .p-skills li {

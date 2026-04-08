@@ -7,9 +7,11 @@ import './styles/resume.css';
 import LeftSection from './LeftSection';
 
 // Icons
-import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
-import SquareRoundedIcon from '@mui/icons-material/SquareRounded';
+import HonorsIcon from '@mui/icons-material/MilitaryTech';
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import OrganizationIcon from '@mui/icons-material/CardMembership';
 
 const Resume = () => {
     useEffect(() => {
@@ -18,8 +20,9 @@ const Resume = () => {
 
     const education = [
         {
-            title: "Polytechnic University of the Philippines - Main Campus",
+            title: "Polytechnic University of the Philippines",
             school_year: "2021 - 2025",
+            address: "Sta. Mesa, Manila",
             course: "Bachelor of Science in Information Technology",
             status: "Validation of Completion",
             honors: "Magna Cum Laude",
@@ -30,9 +33,10 @@ const Resume = () => {
             ]
         },
         {
-            title: "Benedictine Institute of Learning - Imus Cavite",
+            title: "Benedictine Institute of Learning",
             school_year: "2019 - 2021",
             course: "Science, Technology, Engineering and Mathematics",
+            address: "Imus, Cavite",
             honors: "High Honors",
             details: [
                 "Web Development Experience - Basic experience in web development via Google Sites.",
@@ -64,14 +68,13 @@ const Resume = () => {
                         <div className="experience">
                             <div className="ex-header">
                                 <div className="ex-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                    <WorkOutlineOutlinedIcon sx={{ fontSize: 16, marginRight: '5px', marginTop: '3px',  color: '#fece35'}} />
                                     <h4>SMESoft Inc.</h4>
                                 </div>
                                 <span>March 2025 to June 2025</span>
                             </div>
-                            <p>Ayala Ave., Makati City, Metro Manila, Philippines</p>
+                            <p>Ayala Ave., Makati City, Metro Manila</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>Front-end Web Developer Intern</h4>
                             </div>
                             <div className="details">
@@ -92,15 +95,17 @@ const Resume = () => {
                             <div className="education" key={index}>
                                 <div className="edu-header">
                                     <div className="edu-title">
-                                        <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
-
+                                        <SchoolRoundedIcon sx={{ color: '#fece35'}}/>
                                         <h4>{edu.title}</h4>
                                     </div>
                                     <span>{edu.school_year}</span>
                                 </div>
-                                <p>{edu.course}</p>
+                                <p>{edu.address}</p>
+                                <div className="position">
+                                    <h4>{edu.course}</h4>
+                                </div>
                                 <div className="honors">
-                                    <SchoolRoundedIcon />
+                                    <HonorsIcon sx={{ color: '#fece35'}}/>
                                     <h4>{edu.honors}</h4>
                                 </div>
                                 <div className="details">
@@ -118,16 +123,15 @@ const Resume = () => {
                             <hr />
                         </div>
                         <div className="eligibility">
-                            <div className="org-header">
+                            <div className="eligibility-header">
                                 <div className="org-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                    <WorkspacePremiumIcon sx={{ fontSize: 20, marginTop: '3px',  color: '#fece35'}} />
                                     <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
                                 </div>
                                 <span>2025</span>
                             </div>
                             <p>Civil Service Commission</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>Certificate of Eligibility</h4>
                             </div>
                         </div>
@@ -141,14 +145,13 @@ const Resume = () => {
                         <div className="organization">
                             <div className="org-header">
                                 <div className="org-title">
-                                    <CircleRoundedIcon sx={{ fontSize: 10, marginRight: '5px', marginTop: '6px' }} />
+                                    <OrganizationIcon sx={{ fontSize: 20, marginTop: '3px', color: '#fece35'}} />
                                     <h4>Google Developer Groups (GDG) </h4>
                                 </div>
                                 <span>2024-2025</span>
                             </div>
                             <p>Polytechnic University of the Philippines</p>
                             <div className="position">
-                                <SquareRoundedIcon sx={{ fontSize: 7, marginRight: '5px', marginTop: '5px' }} />
                                 <h4>UI/UX Cadet</h4>
                             </div>
                         </div>

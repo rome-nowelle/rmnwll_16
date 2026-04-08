@@ -61,9 +61,9 @@ const Contact = () => {
                         {/* Google Map */}
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61831.464739790455!2d120.93719259999999!3d14.400248000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d252b84f3c11%3A0x38b0f2e1f833e8df!2sImus%2C%20Cavite!5e0!3m2!1sen!2sph!4v1759739620462!5m2!1sen!2sph"
-                            allowfullscreen
+                            allowFullScreen
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                             className="mapa"
                             title="Imus Cavite Map" />
 
@@ -79,12 +79,12 @@ const Contact = () => {
                                     <div className="input-group">
                                         <div className="input-field">
                                             <label htmlFor="name">Full Name</label>
-                                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                                            <input type="text" id="name" name="name" placeholder="Your Name" autoComplete="name" required />
                                         </div>
 
                                         <div className="input-field">
                                             <label htmlFor="email">Email Address</label>
-                                            <input type="email" id="email" name="email" placeholder="Your Email" required />
+                                            <input type="email" id="email" name="email" placeholder="Your Email" autoComplete="email" required />
                                         </div>
                                     </div>
 

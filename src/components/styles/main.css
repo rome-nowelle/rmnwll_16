@@ -47,7 +47,6 @@ hr {
     color: var(--primary-color);
     background-image:
         linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 90%),
-        /* gradient sa bottom */
         url('/src/assets/img/bg-main.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +164,6 @@ hr {
     display: none;
 }
 
-
 /* Right Section */
 .right-section {
     padding: 30px 30px 20px;
@@ -197,6 +195,23 @@ hr {
     margin-bottom: 15px;
     font-family: 'Biorhyme', sans-serif;
     font-size: 13px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid currentColor;
+    width: 0;
+    animation: 
+        typing 4s steps(40, end) forwards,
+        blink 0.8s step-end 4s infinite; 
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 52ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
 }
 
 .right-section .description {
@@ -205,7 +220,7 @@ hr {
     text-align: justify;
     margin-bottom: 30px;
     text-indent: 30px;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 /* What I Do Boxes */
@@ -227,8 +242,9 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    border-radius: 15px;
+    border-radius: 13px;
     text-align: center;
+    max-width: 48%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
     transition: transform 0.3s ease,
@@ -251,18 +267,20 @@ hr {
 }
 
 .info-two {
-    margin-left: 15px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
 }
 
 .info-two p {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 200;
     margin-top: 8px;
     text-align: justify;
     line-height: 1.4;
     letter-spacing: 1.1px;
-    text-indent: 15px;
+    text-indent: 13px;
     color: #909090;
 }
 
@@ -349,7 +367,7 @@ hr {
 }
 
 .language {
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     padding: 18px 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -371,6 +389,18 @@ hr {
     margin-bottom: 20px;
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Mobile & Tablet */
 @media (max-width: 768px) {
 
@@ -390,6 +420,18 @@ hr {
 
     .what-i-do-section {
         display: flex;
+    }
+
+    .right-section .qoute {
+        font-size: 10.3px;
+        animation: 
+            typing 3s steps(30, end) forwards,
+            blink 0.8s step-end 3s infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 52ch; } /* shorter text / smaller screen */
     }
 }
 
@@ -429,14 +471,15 @@ hr {
     .button-links {
         display: flex;
         justify-content: space-around;
+        gap: 10px;
     }
 
     .btn-links {
         text-decoration: none;
         color: #ffffff;
-        border: 1px solid #ffffff;
-        padding: 10px 12px;
-        border-radius: 10px;
+        /* border: 3px solid #ffffff; */
+        padding: 10px 32px;
+        border-radius: 6px;
         font-size: 15px;
         background-color: var(--background-color);
     }
@@ -445,6 +488,8 @@ hr {
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
+
+    
 
     .right-section {
         padding: 20px 15px;
@@ -471,10 +516,6 @@ hr {
         text-indent: 30px;
     }
 
-    .qoute {
-        text-align: center;
-    }
-
     /* What I Do */
     .what-i-do-section {
         flex-direction: column;
@@ -483,8 +524,8 @@ hr {
     }
 
     .what-i-do {
+        max-width: 100%;
         flex-direction: column;
-        text-align: center;
     }
 
     .what-i-do:hover {
@@ -497,6 +538,7 @@ hr {
     .info-two {
         margin-left: 0;
         text-align: center;
+        align-items: center;
         animation: fadeUp 1.4s ease;
     }
 
@@ -551,14 +593,3 @@ hr {
     }
 }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}

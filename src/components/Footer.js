@@ -24,7 +24,10 @@ const Footer = () => {
                 </a>
             </div>
             <div className="footer">
-                <p>&copy; {new Date().getFullYear()} Rmnwll_ | All rights reserved</p>
+                <p>
+                    <span className="copyright">&copy; {new Date().getFullYear()}</span>
+                    Rmnwll_ | All rights reserved
+                </p>
                 <img src={Logo} alt="Rmnwll_ Logo" />
             </div>
         </footer >

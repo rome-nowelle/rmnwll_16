@@ -32,17 +32,19 @@
 .experience,
 .organization,
 .eligibility {
-    margin-bottom: 15px;
-    padding-left: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: 8px;
 }
 
 .education p,
 .experience p,
 .organization p,
 .eligibility p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
-    text-indent: 23px;
+    text-indent: 28px;
     color: #909090;
     letter-spacing: 1px;
 }
@@ -50,7 +52,8 @@
 /* Headers */
 .edu-header,
 .ex-header,
-.org-header {
+.org-header,
+.eligibility-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +70,7 @@
 .edu-title h4,
 .ex-title h4,
 .org-title h4 {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 5px;
     letter-spacing: 1.2px;
 }
@@ -75,67 +78,80 @@
 /* Date / Span */
 .edu-header span,
 .ex-header span,
-.org-header span {
-    font-size: 15px;
-    font-weight: 300;
-    color: #999;
+.org-header span,
+.eligibility-header span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--content-color);
+    padding: 3px 8px;
+    background-color: var(--hover-color);
+    border-radius: 4px;
 }
 
 /* Honors Section */
 .honors {
     display: flex;
     gap: 5px;
-    margin-left: 23px;
-    margin-top: 8px;
+    margin-left: 28px;
+    margin-top: 10px;
 }
 
 .honors h4 {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--background-color);
+    padding: 5px 8px;
+    text-transform: uppercase;
+    background-color: var(--hover-color);
+    border-radius: 0 8px 8px 0;
 }
 
 /* Details */
 .details {
-    margin-top: 8px;
-    font-size: 14px;
-    text-indent: 5px;
+    margin-top: 12px;
+    font-size: 13px;
     line-height: 1.4;
 }
 
 .details ul {
-    list-style: disc;
+    list-style: none;
+    counter-reset: mycounter;
     margin-left: 30px;
-    padding-right: 20px;
     text-align: justify;
 }
 
 .details ul li {
-    margin-bottom: 3px;
-    font-weight: 300;
+    counter-increment: mycounter;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.details ul li::before {
+    content: counter(mycounter, decimal-leading-zero) " ";
+    color: var(--hover-color);
+    min-width: 30px;
 }
 
 /* Work Position */
 .position {
-    margin-left: 29px;
+    margin-left: 25px;
     margin-top: 8px;
-    display: flex;
+    display: inline-flex;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: var(--background-color);
 }
 
 .position h4 {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 10px;
+    font-weight: 600;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
-
-/* Misc */
-.spanie {
-    font-weight: 300;
-}
-
 
 @media (max-width: 768px) {
-
     .resume-page .resume-left {
         display: none;
     }
@@ -154,31 +170,64 @@
     }
 
     /* Headers */
-    .edu-header {
-        flex-direction: column;
-        align-items: flex-start;
+    .edu-header,
+    .ex-header,
+    .org-header,
+    .eligibility-header {
+        display: inline-flex;
+        flex-wrap: wrap;
     }
 
-    .edu-header>span,
-    .ex-header>span,
-    .org-header>span {
-        font-size: 12px;
+    .edu-header > span,
+    .org-header > span {
+        flex-basis: 24%;
+        font-size: 11px;
         font-weight: 400;
-        color: #999;
+        color: var(--content-color);
         margin-left: 25px;
         margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .ex-header > span {
+        flex-basis: 51%;
+        font-size: 11px;
+        font-weight: 400;
+        color: var(--content-color);
+        margin-left: 25px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .eligibility-header > span {
+        flex-basis: 10%;
+        font-size: 11px;
+        font-weight: 400;
+        color: var(--content-color);
+        margin-left: 25px;
+        margin-bottom: 7px;
+        text-align: center;
     }
 
     /* Headings */
     .edu-title h4,
     .ex-title h4,
-    .org-title h4,
+    .org-title h4 {
+        font-size: 12.7px;
+    }
+
     .honors h4 {
-        font-size: 12px;
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--background-color);
+        padding: 5px 8px;
+        text-transform: uppercase;
+        background-color: var(--hover-color);
+        border-radius: 0 8px 8px 0;
     }
 
     .position h4 {
-        font-size: 11.5px;
+        font-size: 8px;
     }
 
     .edu-title h4 .spannie {
@@ -187,13 +236,14 @@
     }
 
     /* Paragraphs & Lists */
-    .education p {
+    .education p,
+    .experience p {
         font-size: 11px;
-        color: white;
+        color: #909090;
+        ;
     }
 
     .details ul li,
-    .experience p,
     .eligibility p,
     .organization p {
         font-size: 11.5px;
