@@ -14,7 +14,7 @@
 .certification p {
     font-size: 13px;
     font-weight: lighter;
-    text-indent: 26px;
+    margin-left: 26px;
     color: #909090;
     letter-spacing: 1px;
     margin-bottom: 8px;
@@ -443,6 +443,7 @@
 
     .certification p {
         font-size: 11px;
+        margin-left: 26px;
     }
 
     .tech-skills {

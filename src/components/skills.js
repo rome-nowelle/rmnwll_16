@@ -55,7 +55,12 @@ const Skills = () => {
     }, []);
 
     const certifications = [
-
+        {
+            title: "JavaScript Essentials 1",
+            year: 2026,
+            org: "Cisco Networking Academy | Institute Open Education & Development Group",
+            status: "Statement of Achievement"
+        },
         {
             title: "Network Addressing and Basic Troubleshooting",
             year: 2026,
@@ -68,8 +73,6 @@ const Skills = () => {
             org: "ISC2 Cyber Security",
             status: "Validation of Completion"
         }
-
-
     ];
 
     const frontendSkills = [
