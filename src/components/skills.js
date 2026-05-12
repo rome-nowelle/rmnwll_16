@@ -12,6 +12,7 @@ import css from '../assets/img/CSS.png';
 import javascript from '../assets/img/JavaScript.png';
 import bootstrap from '../assets/img/Bootstrap.png';
 import react from '../assets/img/React.png';
+import tailwind from '../assets/img/Tailwind_CSS_Logo.svg';
 import figma from '../assets/img/Figma.png';
 import canva from '../assets/img/Canva.png';
 import php from '../assets/img/PHP.png';
@@ -79,8 +80,9 @@ const Skills = () => {
         { img: html, alt: "HTML5 Logo", level: 85 },
         { img: css, alt: "CSS Logo", level: 75 },
         { img: javascript, alt: "JavaScript Logo", level: 45 },
+        { img: react, alt: "React Logo", level: 30 },
         { img: bootstrap, alt: "Bootstrap Logo", level: 35 },
-        { img: react, alt: "React Logo", level: 30 }
+        { img: tailwind, alt: "Tailwind CSS Logo", level: 10 }
     ];
 
     const backendSkills = [
@@ -140,7 +142,7 @@ const Skills = () => {
 
                         <div className="tech-skills">
                             <div className="tech-skills_section">
-                                <h3>Technical Skills</h3>
+                                <h3>Tech Stack</h3>
                                 <hr />
                             </div>
 

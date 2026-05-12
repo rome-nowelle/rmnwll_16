@@ -39,7 +39,7 @@ const Project = () => {
         {
             id: 1,
             title: 'Bigbrew',
-            paragraph: 'A web-based ordering system for Bigbrew milk tea shop that allows customers to browse the menu, place orders, and manage transactions digitally.',
+            paragraph: 'A web-based ordering system for Bigbrew milk tea shop that allows customers to browse the menu, place orders, and check your order status.',
             category: 'Web Development',
             description: 'Course Project',
             image: Bigbrew,
@@ -52,13 +52,13 @@ const Project = () => {
             ],
             links: [
                 { name: "GitHub", icon: github, url: 'https://github.com/rome-nowelle/big-brew' },
-                { name: "Live", icon: bigbrew, url: 'https://bigbrew-demo.vercel.app' }
+                { name: "Live", icon: bigbrew, url: '#' }
             ]
         },
         {
             id: 2,
             title: 'JustiFile',
-            paragraph: 'A document management system designed for organizing legal case files and documents efficiently for easier access and retrieval.',
+            paragraph: 'A Blotter & Incident Report and handling system designed for organizing barangay files and documents efficiently for easier access and retrieval for barangay officials and residents.',
             category: 'Web Development',
             description: 'Capstone Project',
             image: JustifileWeb,
@@ -71,14 +71,14 @@ const Project = () => {
             ],
             links: [
                 // { name: "GitHub", icon: github, url: 'https://github.com/rome-nowelle/justifile' },
-                { name: "Live", icon: justifileAdmin, url: 'https://notyetrelease' },
-                { name: "Live", icon: justifileResident, url: 'https://notyetrelease' }
+                { name: "Live", icon: justifileAdmin, url: '#' },
+                { name: "Live", icon: justifileResident, url: '#' }
             ]
         },
         {
             id: 3,
-            title: 'Rmnwll_',
-            paragraph: 'My personal portfolio website showcasing my projects, resume, skills, and web development journey.',
+            title: 'E-Portfolio',
+            paragraph: 'My personal portfolio website showcasing my projects, resume, skills, and contact information, designed to highlight my work and experience in web development.',
             category: 'Web Development',
             description: 'Personal Project',
             image: Eportfolio,
@@ -98,7 +98,7 @@ const Project = () => {
             title: 'JustiFile | Prototype',
             paragraph: 'A design prototype of the JustiFile system created during the early stage of development to visualize the UI and user workflow.',
             category: 'Web Design',
-            description: 'Course Project',
+            description: 'Capstone Project',
             image: JustifilePrototype,
             tech: [
                 { name: "Figma", icon: figma }
@@ -169,8 +169,10 @@ const Project = () => {
                                             <h5>{project.title}</h5>
                                             <p>{project.description}</p>
                                         </div>
-
-                                        <p>{project.category}</p>
+                                        
+                                        <div className="category">
+                                            <p>{project.category}</p>
+                                        </div>
                                     </div>
                                 ))}
 

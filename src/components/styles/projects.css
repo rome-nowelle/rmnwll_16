@@ -33,13 +33,13 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(135deg, rgba(254, 206, 53, 0.25) 20%, rgba(254, 206, 53, 0) 40%, var(--background-color) 100%);
 }
 
 /* Card Hover */
 .cardstyle:hover {
     box-shadow: 0 4px 24px var(--hover-color);
     transform: translateY(-5px);
-    animation: pulse 0.6s;
 }
 
 /* Card Image */
@@ -54,6 +54,11 @@
 .cardstyle p {
     font-weight: 300;
     font-size: 14px;
+}
+
+/* Card Category */
+.category {
+    margin: 5px 0;
 }
 
 /* Overlay Section */
