@@ -241,7 +241,7 @@ const Skills = () => {
                                             <li>Responsive Web Design</li>
                                             <li>Cybersecurity Fundamentals</li>
                                             <li>Basic Troubleshooting</li>
-
+                                            <li>Data Encoding</li>
                                         </ul>
                                     </div>
                                 </div>

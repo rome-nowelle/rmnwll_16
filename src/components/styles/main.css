@@ -207,7 +207,7 @@ hr {
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 52ch; }
+    to { width: 98ch; }
 }
 
 @keyframes blink {

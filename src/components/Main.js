@@ -22,6 +22,7 @@ import Codes from '@mui/icons-material/Code';
 import Windows from '@mui/icons-material/ViewQuiltRounded';
 import WebAsset from '@mui/icons-material/WebAsset';
 import Design from '@mui/icons-material/ViewListRounded';
+import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
 
 // Main Component
 const Main = () => {
@@ -40,13 +41,8 @@ const Main = () => {
                     {/* Right Section */}
                     <div className="right-section">
                         <h2>About Me</h2>
-                        <p className="qoute">“Creating modern, responsive, and user-friendly web experiences.”</p>
-                        <p className="description"> I’m Rome Nowelle R. Sanares, a fresh graduate of BS Information Technology,
-                            Magna Cum Laude, from
-                            the Polytechnic University of the Philippines. I have a strong interest in front-end development and
-                            UI/UX design, and I enjoy creating responsive and user-friendly websites. I’m eager to apply my
-                            knowledge and creativity as I begin my professional journey as a Front-End Developer or UI/UX
-                            Designer, and I look forward to the opportunity to contribute and collaborate with your team.</p>
+                        <p className="qoute">“Creating modern, responsive, and user-friendly web experiences while optimizing digital data and workflows in public service.”</p>
+                        <p className="description"> I’m Rome Nowelle R. Sanares, a BS Information Technology graduate, Magna Cum Laude, from the Polytechnic University of the Philippines. With a strong foundation in Front-End Development and UI/UX design, I am passionate about turning ideas into clean, functional, and responsive websites. Currently gaining professional experience in data and workflow management, I look forward to contributing my technical skills and creativity to a collaborative development team.</p>
 
                         <div className="text-margin">
                             <h4>What I'm Doing</h4>
@@ -66,6 +62,14 @@ const Main = () => {
                                 <div className="info-two">
                                     <span>Web Development</span>
                                     <p>Turning ideas into responsive websites that work smoothly on any device.</p>
+                                </div>
+                            </div>
+
+                            <div className="what-i-do">
+                                <DataThresholdingIcon sx={{ fontSize: 45 }} />
+                                <div className="info-two">
+                                    <span>Data Management</span>
+                                    <p>Handling accurate data encoding, systematic document scanning, and secure file backups.</p>
                                 </div>
                             </div>
                         </div>

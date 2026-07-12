@@ -68,7 +68,26 @@ const Resume = () => {
                         <div className="experience">
                             <div className="ex-header">
                                 <div className="ex-title">
-                                    <WorkOutlineOutlinedIcon sx={{ fontSize: 16, marginRight: '5px', marginTop: '3px',  color: '#fece35'}} />
+                                    <WorkOutlineOutlinedIcon sx={{ fontSize: 16, marginRight: '5px', marginTop: '3px', color: '#fece35' }} />
+                                    <h4>Department of Labor and Employment (DOLE) - Central Office</h4>
+                                </div>
+                                <span>June 2026 - Present</span>
+                            </div>
+                            <p>DOLE Building, Muralla Wing cor. General Luna St., Intramuros, Manila</p>
+                            <div className="position">
+                                <h4>Financial and Management Service (Budget Division - GIP) - Government Intern</h4>
+                            </div>
+                            <div className="details">
+                                <ul>
+                                    <li>Assisted the Financial and Management Service under the Budget Division by systematically scanning documents, encoding data into monitoring log sheets, managing document workflows, maintaining secure server and OneDrive backups, and providing technical hardware support.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="experience">
+                            <div className="ex-header">
+                                <div className="ex-title">
+                                    <WorkOutlineOutlinedIcon sx={{ fontSize: 16, marginRight: '5px', marginTop: '3px', color: '#fece35' }} />
                                     <h4>SMESoft Inc.</h4>
                                 </div>
                                 <span>March 2025 to June 2025</span>
@@ -95,7 +114,7 @@ const Resume = () => {
                             <div className="education" key={index}>
                                 <div className="edu-header">
                                     <div className="edu-title">
-                                        <SchoolRoundedIcon sx={{ color: '#fece35'}}/>
+                                        <SchoolRoundedIcon sx={{ color: '#fece35' }} />
                                         <h4>{edu.title}</h4>
                                     </div>
                                     <span>{edu.school_year}</span>
@@ -105,7 +124,7 @@ const Resume = () => {
                                     <h4>{edu.course}</h4>
                                 </div>
                                 <div className="honors">
-                                    <HonorsIcon sx={{ color: '#fece35'}}/>
+                                    <HonorsIcon sx={{ color: '#fece35' }} />
                                     <h4>{edu.honors}</h4>
                                 </div>
                                 <div className="details">
@@ -125,7 +144,7 @@ const Resume = () => {
                         <div className="eligibility">
                             <div className="eligibility-header">
                                 <div className="org-title">
-                                    <WorkspacePremiumIcon sx={{ fontSize: 20, marginTop: '3px',  color: '#fece35'}} />
+                                    <WorkspacePremiumIcon sx={{ fontSize: 20, marginTop: '3px', color: '#fece35' }} />
                                     <h4>P.D No. 907 - Honor Graduate Eligibility (HGE)</h4>
                                 </div>
                                 <span>2025</span>
@@ -145,7 +164,7 @@ const Resume = () => {
                         <div className="organization">
                             <div className="org-header">
                                 <div className="org-title">
-                                    <OrganizationIcon sx={{ fontSize: 20, marginTop: '3px', color: '#fece35'}} />
+                                    <OrganizationIcon sx={{ fontSize: 20, marginTop: '3px', color: '#fece35' }} />
                                     <h4>Google Developer Groups (GDG) </h4>
                                 </div>
                                 <span>2024-2025</span>
